@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include "libft.h"
+#include "push_swap.h"
 
 void ft_is_all_number(int argc, char **argv, int *a)
 {
@@ -20,7 +17,8 @@ void ft_is_all_number(int argc, char **argv, int *a)
 				i++;
 			else
 			{
-				write(0, "Error\n", 6);
+				write(2, "Error\n", 6);
+				free(a);
 				exit(-1);
 			}
 		}
@@ -29,7 +27,7 @@ void ft_is_all_number(int argc, char **argv, int *a)
 	}
 }
 
-int		ft_atoi_with_check(const char *str)
+int		ft_atoi_with_check(const char *str, int *a)
 {
 	long long	sign;
 	long long	resalt;
@@ -48,7 +46,8 @@ int		ft_atoi_with_check(const char *str)
 	resalt *= sign;
 	if (resalt > INT32_MAX || resalt < INT32_MIN)				//some arguments are bigger than an integer,
 	{
-			write(0, "Error\n", 6);
+			write(2, "Error\n", 6);
+			free(a);
 			exit(-1);
 	}
 	return ((int)resalt);
@@ -62,9 +61,13 @@ int ft_write_numbers_one_number(int argc, char **argv, int *a)
 	j = 0;
 	i = 0;
 	while(j++ < argc-1)//zapisyvaem chisla v massiv int
-		a[i++] = ft_atoi_with_check(argv[j]);
-	if(argc == 2)     // odno chislo
+		a[i++] = ft_atoi_with_check(argv[j], a);
+	if(argc == 2)// odno chislo
+	{
+		free(a);
 		exit(0);
+	}
+
 	return 0;
 }
 
@@ -83,7 +86,8 @@ void ft_check_repeat_numbers(int argc, char **argv, int *a)        //chisla povt
 		{
 			if (a[i] == a[i + n])
 			{
-				write(0, "Error\n", 6);
+				write(2, "Error\n", 6);
+				free(a);
 				exit(-1);
 			}
 			else
@@ -104,7 +108,10 @@ int ft_check_sort(int argc, int *a)               //chisla sortirovany
 	while ((i < end) && (a[i] < a[i+1]))
 			i++;
 	if (i == end)
+	{
+		free(a);
 		exit(0);
+	}
 	return(0);
 }
 
@@ -130,36 +137,31 @@ int ft_check_error_and_write_numbers(int argc, char **argv, int *a)
 	 * exit(-1);
 	*/
 	///////////
-//	2.ponyat, gde "top of the stack"
-//		cdelat ft sa
-//		sb
-//		ss
-//		pa
-//		pb
-//		ra
-//		rb
-//		rr
-//		rra
-//		rrb
-//		rrr
+
 
 int main(int argc, char **argv)
 {
-	int a[argc-1];
-	int b[argc-1];
-	//int i = 0;
+	int *a;
+	int *b;
+	int i = 0;
 
 	if (argc <= 1)
 	{
-		write(0,"Error\n", 6);
+		write(2,"Error\n", 6);
 		exit(-1);
 	}
-	ft_check_error_and_write_numbers(argc, argv,a);
+	if (!(a = (int*)malloc(sizeof(*a) * argc)))
+		return(0);
+	ft_check_error_and_write_numbers(argc, argv, a);
+	if (!(b = (int*)malloc(sizeof(*b) * argc)))
+		return(0);
 	//sortirovka
-//	while (i < argc -1)
-//	{
-//		printf("%d", a[i]);
-//		i++;
-//	}
+	while (i < argc -1)
+	{
+		printf("%d", a[i]);
+		i++;
+	}
+	free(a);
+	free(b);
 	return 0;
 }

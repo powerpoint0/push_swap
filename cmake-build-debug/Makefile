@@ -1824,6 +1824,33 @@ libft/ft_toupper.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/ft_toupper.c.s
 .PHONY : libft/ft_toupper.c.s
 
+push_swap/ft_functions.o: push_swap/ft_functions.c.o
+
+.PHONY : push_swap/ft_functions.o
+
+# target to build an object file
+push_swap/ft_functions.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/ft_functions.c.o
+.PHONY : push_swap/ft_functions.c.o
+
+push_swap/ft_functions.i: push_swap/ft_functions.c.i
+
+.PHONY : push_swap/ft_functions.i
+
+# target to preprocess a source file
+push_swap/ft_functions.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/ft_functions.c.i
+.PHONY : push_swap/ft_functions.c.i
+
+push_swap/ft_functions.s: push_swap/ft_functions.c.s
+
+.PHONY : push_swap/ft_functions.s
+
+# target to generate assembly for a file
+push_swap/ft_functions.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/ft_functions.c.s
+.PHONY : push_swap/ft_functions.c.s
+
 push_swap/main.o: push_swap/main.c.o
 
 .PHONY : push_swap/main.o
@@ -2049,6 +2076,9 @@ help:
 	@echo "... libft/ft_toupper.o"
 	@echo "... libft/ft_toupper.i"
 	@echo "... libft/ft_toupper.s"
+	@echo "... push_swap/ft_functions.o"
+	@echo "... push_swap/ft_functions.i"
+	@echo "... push_swap/ft_functions.s"
 	@echo "... push_swap/main.o"
 	@echo "... push_swap/main.i"
 	@echo "... push_swap/main.s"

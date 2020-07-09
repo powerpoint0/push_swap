@@ -176,6 +176,11 @@ CMakeFiles/push_swap.dir/libft/ft_tolower.c.o: ../libft/ft_tolower.c
 
 CMakeFiles/push_swap.dir/libft/ft_toupper.c.o: ../libft/ft_toupper.c
 
+CMakeFiles/push_swap.dir/push_swap/ft_functions.c.o: ../libft/libft.h
+CMakeFiles/push_swap.dir/push_swap/ft_functions.c.o: ../push_swap/ft_functions.c
+CMakeFiles/push_swap.dir/push_swap/ft_functions.c.o: ../push_swap/push_swap.h
+
 CMakeFiles/push_swap.dir/push_swap/main.c.o: ../libft/libft.h
 CMakeFiles/push_swap.dir/push_swap/main.c.o: ../push_swap/main.c
+CMakeFiles/push_swap.dir/push_swap/main.c.o: ../push_swap/push_swap.h
 
