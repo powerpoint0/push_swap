@@ -62,8 +62,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/libft/ft_strtrim.c.o"
   "CMakeFiles/push_swap.dir/libft/ft_tolower.c.o"
   "CMakeFiles/push_swap.dir/libft/ft_toupper.c.o"
+  "CMakeFiles/push_swap.dir/push_swap/ft_check_valid.c.o"
   "CMakeFiles/push_swap.dir/push_swap/ft_functions.c.o"
-  "CMakeFiles/push_swap.dir/push_swap/main.c.o"
+  "CMakeFiles/push_swap.dir/push_swap/push_swap.c.o"
   "push_swap"
   "push_swap.pdb"
 )

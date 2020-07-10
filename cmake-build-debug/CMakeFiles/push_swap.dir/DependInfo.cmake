@@ -67,8 +67,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/cjoaquin/CLionProjects/push_swap/libft/ft_strtrim.c" "/Users/cjoaquin/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_strtrim.c.o"
   "/Users/cjoaquin/CLionProjects/push_swap/libft/ft_tolower.c" "/Users/cjoaquin/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_tolower.c.o"
   "/Users/cjoaquin/CLionProjects/push_swap/libft/ft_toupper.c" "/Users/cjoaquin/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_toupper.c.o"
+  "/Users/cjoaquin/CLionProjects/push_swap/push_swap/ft_check_valid.c" "/Users/cjoaquin/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap/ft_check_valid.c.o"
   "/Users/cjoaquin/CLionProjects/push_swap/push_swap/ft_functions.c" "/Users/cjoaquin/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap/ft_functions.c.o"
-  "/Users/cjoaquin/CLionProjects/push_swap/push_swap/main.c" "/Users/cjoaquin/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap/main.c.o"
+  "/Users/cjoaquin/CLionProjects/push_swap/push_swap/push_swap.c" "/Users/cjoaquin/CLionProjects/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap/push_swap.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

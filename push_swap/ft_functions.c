@@ -40,17 +40,19 @@ void ft_sa_sb(int *a, char letter)         ///kolvo elem v [0]
 	c = a[1];
 	a[1] = a[2];
 	a[2] = c;
+	if (letter == 'n')
+		return;
 	letter == 'a' ? write(1, "sa\n", 3) :  write(1, "sb\n", 3);
 }
 
 void ft_ss(int *a, int *b)
 {
-	ft_sa_sb(a, 'a');
-	ft_sa_sb(b, 'b');
+	ft_sa_sb(a, 'n');
+	ft_sa_sb(b, 'n');
 	write(1, "ss\n", 3);
 }
 
-void ft_pa_pb(int *a, int *b, char letter)
+void ft_pa_pb(int *a, int *b, char letter) //++
 {
 	int k;
 
@@ -64,13 +66,15 @@ void ft_pa_pb(int *a, int *b, char letter)
 	}
 	a[1] = b[1];
 	a[0]++;
-	k = b[0];
-	while(k > 1)
+	k = 1;
+	while(k < b[0])
 	{
-		b[k - 1] = b[k];
-		k--;
+		b[k] = b[k + 1];
+		k++;
 	}
 	b[0]--;
+	if (letter == 'n')
+		return;
 	letter == 'a' ? write(1, "pa\n", 3) :  write(1, "pb\n", 3);
 }
 
@@ -80,21 +84,25 @@ void ft_ra_rb(int *a, char letter)
 	int c;
 
 	c = a[1];
-	k = a[0];
-	while(k > 1)
+	k = 1;
+	if (a[0] <= 1)
+		return;
+	while(k < a[0])
 	{
-		a[k - 1] = a[k];
-		k--;
+		a[k] = a[k + 1];
+		k++;
 	}
 	a[*a] = c;
+	if (letter == 'n')
+		return;
 	letter == 'a' ? write(1, "ra\n", 3) :  write(1, "rb\n", 3);
 }
 
 
 void ft_rr(int *a,int *b)
 {
-	ft_ra_rb(a, 'a');
-	ft_ra_rb(b, 'b');
+	ft_ra_rb(a, 'n');
+	ft_ra_rb(b, 'n');
 	write(1, "rr\n", 3);
 }
 
@@ -106,19 +114,23 @@ void ft_rra_rrb(int *a, char letter)
 	k = a[0];
 	c = a[k];
 
+	if(a[0] <= 1)
+		return;
 	while(k > 1)
 	{
 		a[k] = a[k - 1];
 		k--;
 	}
 	a[1] = c;
+	if (letter == 'n')
+		return;
 	letter == 'a' ? write(1, "rra\n", 4) :  write(1, "rrb\n", 4);
 }
 
 void ft_rrr(int *a, int *b)
 {
-	ft_rra_rrb(a, 'a');
-	ft_rra_rrb(b, 'b');
+	ft_rra_rrb(a, 'n');
+	ft_rra_rrb(b, 'n');
 	write(1, "rrr\n", 4);
 }
 

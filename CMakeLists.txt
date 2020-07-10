@@ -72,4 +72,4 @@ add_executable(push_swap
         libft/ft_tolower.c
         libft/ft_toupper.c
         libft/libft.h
-        push_swap/main.c push_swap/ft_functions.c push_swap/push_swap.h)
+        push_swap/push_swap.c push_swap/ft_functions.c push_swap/push_swap.h push_swap/ft_check_valid.c)

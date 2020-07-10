@@ -1824,6 +1824,33 @@ libft/ft_toupper.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/libft/ft_toupper.c.s
 .PHONY : libft/ft_toupper.c.s
 
+push_swap/ft_check_valid.o: push_swap/ft_check_valid.c.o
+
+.PHONY : push_swap/ft_check_valid.o
+
+# target to build an object file
+push_swap/ft_check_valid.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/ft_check_valid.c.o
+.PHONY : push_swap/ft_check_valid.c.o
+
+push_swap/ft_check_valid.i: push_swap/ft_check_valid.c.i
+
+.PHONY : push_swap/ft_check_valid.i
+
+# target to preprocess a source file
+push_swap/ft_check_valid.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/ft_check_valid.c.i
+.PHONY : push_swap/ft_check_valid.c.i
+
+push_swap/ft_check_valid.s: push_swap/ft_check_valid.c.s
+
+.PHONY : push_swap/ft_check_valid.s
+
+# target to generate assembly for a file
+push_swap/ft_check_valid.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/ft_check_valid.c.s
+.PHONY : push_swap/ft_check_valid.c.s
+
 push_swap/ft_functions.o: push_swap/ft_functions.c.o
 
 .PHONY : push_swap/ft_functions.o
@@ -1851,32 +1878,32 @@ push_swap/ft_functions.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/ft_functions.c.s
 .PHONY : push_swap/ft_functions.c.s
 
-push_swap/main.o: push_swap/main.c.o
+push_swap/push_swap.o: push_swap/push_swap.c.o
 
-.PHONY : push_swap/main.o
+.PHONY : push_swap/push_swap.o
 
 # target to build an object file
-push_swap/main.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/main.c.o
-.PHONY : push_swap/main.c.o
+push_swap/push_swap.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/push_swap.c.o
+.PHONY : push_swap/push_swap.c.o
 
-push_swap/main.i: push_swap/main.c.i
+push_swap/push_swap.i: push_swap/push_swap.c.i
 
-.PHONY : push_swap/main.i
+.PHONY : push_swap/push_swap.i
 
 # target to preprocess a source file
-push_swap/main.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/main.c.i
-.PHONY : push_swap/main.c.i
+push_swap/push_swap.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/push_swap.c.i
+.PHONY : push_swap/push_swap.c.i
 
-push_swap/main.s: push_swap/main.c.s
+push_swap/push_swap.s: push_swap/push_swap.c.s
 
-.PHONY : push_swap/main.s
+.PHONY : push_swap/push_swap.s
 
 # target to generate assembly for a file
-push_swap/main.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/main.c.s
-.PHONY : push_swap/main.c.s
+push_swap/push_swap.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap/push_swap.c.s
+.PHONY : push_swap/push_swap.c.s
 
 # Help Target
 help:
@@ -2076,12 +2103,15 @@ help:
 	@echo "... libft/ft_toupper.o"
 	@echo "... libft/ft_toupper.i"
 	@echo "... libft/ft_toupper.s"
+	@echo "... push_swap/ft_check_valid.o"
+	@echo "... push_swap/ft_check_valid.i"
+	@echo "... push_swap/ft_check_valid.s"
 	@echo "... push_swap/ft_functions.o"
 	@echo "... push_swap/ft_functions.i"
 	@echo "... push_swap/ft_functions.s"
-	@echo "... push_swap/main.o"
-	@echo "... push_swap/main.i"
-	@echo "... push_swap/main.s"
+	@echo "... push_swap/push_swap.o"
+	@echo "... push_swap/push_swap.i"
+	@echo "... push_swap/push_swap.s"
 .PHONY : help
 
 

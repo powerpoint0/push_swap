@@ -277,10 +277,13 @@
 		<Unit filename="/Users/cjoaquin/CLionProjects/push_swap/libft/libft.h">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/cjoaquin/CLionProjects/push_swap/push_swap/ft_check_valid.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/cjoaquin/CLionProjects/push_swap/push_swap/ft_functions.c">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/cjoaquin/CLionProjects/push_swap/push_swap/main.c">
+		<Unit filename="/Users/cjoaquin/CLionProjects/push_swap/push_swap/push_swap.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/cjoaquin/CLionProjects/push_swap/push_swap/push_swap.h">
