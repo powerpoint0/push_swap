@@ -123,6 +123,33 @@ push_swap/fast:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
 .PHONY : push_swap/fast
 
+checker/checker.o: checker/checker.c.o
+
+.PHONY : checker/checker.o
+
+# target to build an object file
+checker/checker.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/checker/checker.c.o
+.PHONY : checker/checker.c.o
+
+checker/checker.i: checker/checker.c.i
+
+.PHONY : checker/checker.i
+
+# target to preprocess a source file
+checker/checker.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/checker/checker.c.i
+.PHONY : checker/checker.c.i
+
+checker/checker.s: checker/checker.c.s
+
+.PHONY : checker/checker.s
+
+# target to generate assembly for a file
+checker/checker.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/checker/checker.c.s
+.PHONY : checker/checker.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -1914,6 +1941,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... push_swap"
+	@echo "... checker/checker.o"
+	@echo "... checker/checker.i"
+	@echo "... checker/checker.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"

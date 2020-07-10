@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/cjoaquin/CLionProjects/push_swap/checker/checker.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/cjoaquin/CLionProjects/push_swap/libft/ft_atoi.c">
 			<Option target="push_swap"/>
 		</Unit>

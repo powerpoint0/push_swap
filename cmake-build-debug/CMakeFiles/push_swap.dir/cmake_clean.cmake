@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/push_swap.dir/checker/checker.c.o"
   "CMakeFiles/push_swap.dir/libft/ft_atoi.c.o"
   "CMakeFiles/push_swap.dir/libft/ft_binar_chr.c.o"
   "CMakeFiles/push_swap.dir/libft/ft_bzero.c.o"
