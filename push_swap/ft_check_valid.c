@@ -1,4 +1,4 @@
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void ft_is_all_number(int argc, char **argv, int *a)
 {

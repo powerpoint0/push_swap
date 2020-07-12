@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include "libft.h"
 
+int		ft_check_error_and_write_numbers(int argc, char **argv, int *a, int *b);
 void	ft_is_all_number(int argc, char **argv, int *a);
 int		ft_atoi_with_check(const char *str, int *a);
 int		ft_write_numbers_one_number(int argc, char **argv, int *a);

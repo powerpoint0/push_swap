@@ -29,7 +29,7 @@
 //rrb : reverse rotate b - shift down all elements of stack b by 1. The last element
 //		becomes the first one.
 //rrr : rra and rrb at the same time.
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void ft_sa_sb(int *a, char letter)         ///kolvo elem v [0]
 {
