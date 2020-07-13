@@ -20,6 +20,7 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="p_s" targetName="checker" />
       <config projectName="p_s" targetName="p_s" />
     </generated>
   </component>
@@ -31,32 +32,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f8ca7b35-7b02-48a2-807b-27568ac99ea7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker/checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/checker/checker.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/push_swap.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap/ft_check_valid.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap/ft_check_valid.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap/ft_functions.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap/ft_functions.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap/push_swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap/push_swap.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap/push_swap.h" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,31 +72,19 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.push_swap">
-    <configuration name="checker" type="CMakeRunConfiguration" factoryName="Application" singleton="false" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/checker" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p_s" TARGET_NAME="checker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p_s" RUN_TARGET_NAME="checker">
+  <component name="RunManager" selected="CMake Application.p_s">
+    <configuration name="checker" type="CMakeRunConfiguration" factoryName="Application" singleton="false" REDIRECT_INPUT="true" REDIRECT_INPUT_PATH="$PROJECT_DIR$" WORKING_DIR="file://$PROJECT_DIR$/checker" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p_s" TARGET_NAME="checker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p_s" RUN_TARGET_NAME="checker">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="p_s" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p_s" TARGET_NAME="p_s" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p_s" RUN_TARGET_NAME="p_s">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="pus-sw" type="CMakeRunConfiguration" factoryName="Application" singleton="false" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$/push_swap" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="push_swap" type="CMakeRunConfiguration" factoryName="Application" singleton="false" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p_s" TARGET_NAME="p_s" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p_s" RUN_TARGET_NAME="p_s">
+    <configuration name="p_s" type="CMakeRunConfiguration" factoryName="Application" singleton="false" PROGRAM_PARAMS="1 2 3" REDIRECT_INPUT="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p_s" TARGET_NAME="p_s" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p_s" RUN_TARGET_NAME="p_s">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="CMake Application.checker" />
-      <item itemvalue="CMake Application.push_swap" />
-      <item itemvalue="CMake Application.pus-sw" />
       <item itemvalue="CMake Application.p_s" />
     </list>
   </component>
@@ -158,7 +123,8 @@
       <workItem from="1594553376865" duration="910000" />
       <workItem from="1594554289071" duration="5194000" />
       <workItem from="1594560524335" duration="133000" />
-      <workItem from="1594560658636" duration="53000" />
+      <workItem from="1594560658636" duration="4156000" />
+      <workItem from="1594649953174" duration="9049000" />
     </task>
     <servers />
   </component>
@@ -186,10 +152,10 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1307" y="429" key="#checker/0.23.2560.1337@0.23.2560.1337" timestamp="1594559924307" />
-    <state x="1137" y="295" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594560045163">
+    <state x="1137" y="295" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594650718346">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1137" y="295" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1594560045163" />
+    <state x="1137" y="295" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1594650718346" />
     <state x="1460" y="345" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1594554153452">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -198,26 +164,26 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="622" y="412" key="#push_swap/0.23.2560.1337@0.23.2560.1337" timestamp="1594560710787" />
-    <state width="1709" height="362" key="GridCell.Tab.0.bottom" timestamp="1594560285092">
+    <state width="1709" height="362" key="GridCell.Tab.0.bottom" timestamp="1594651354905">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="370" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1594388490946" />
-    <state width="1709" height="362" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1594560285092" />
-    <state width="1709" height="362" key="GridCell.Tab.0.center" timestamp="1594560285092">
+    <state width="1709" height="362" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1594651354905" />
+    <state width="1709" height="362" key="GridCell.Tab.0.center" timestamp="1594651354904">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="370" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1594388490945" />
-    <state width="1709" height="362" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1594560285092" />
-    <state width="1709" height="362" key="GridCell.Tab.0.left" timestamp="1594560285091">
+    <state width="1709" height="362" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1594651354904" />
+    <state width="1709" height="362" key="GridCell.Tab.0.left" timestamp="1594651354903">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="370" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1594388490945" />
-    <state width="1709" height="362" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1594560285091" />
-    <state width="1709" height="362" key="GridCell.Tab.0.right" timestamp="1594560285092">
+    <state width="1709" height="362" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1594651354903" />
+    <state width="1709" height="362" key="GridCell.Tab.0.right" timestamp="1594651354905">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="370" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1594388490946" />
-    <state width="1709" height="362" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1594560285092" />
+    <state width="1709" height="362" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1594651354905" />
     <state width="2518" height="520" key="GridCell.Tab.1.bottom" timestamp="1594394617491">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
