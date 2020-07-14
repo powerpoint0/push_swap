@@ -73,13 +73,13 @@ add_executable(p_s
         libft/ft_tolower.c
         libft/ft_toupper.c
         libft/libft.h
-        push_swap/ft_check_valid.c
-        push_swap/ft_functions.c
-        push_swap/push_swap.c
+		push_swap&checker/ft_check_valid.c
+		push_swap&checker/ft_functions.c
+		push_swap&checker/push_swap.c
         push_swap.h)
 
 add_executable(checker
-		checker/checker.c
+		push_swap&checker/checker.c
 		libft/includes/libft.h
 		libft/ft_atoi.c
 		libft/ft_binar_chr.c
@@ -145,7 +145,6 @@ add_executable(checker
 		libft/ft_tolower.c
 		libft/ft_toupper.c
 		libft/libft.h
-		push_swap/ft_check_valid.c
-		push_swap/ft_functions.c
-		push_swap/push_swap.c
+		push_swap&checker/ft_check_valid.c
+		push_swap&checker/ft_functions.c
 		push_swap.h)
