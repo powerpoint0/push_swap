@@ -61,62 +61,70 @@ void ft_do_comands(char **instr_main, char *instr,int *a, int *b)
 	ft_bzero(instr, 5);
 }
 
-int ft_read_comands(char **instr, int *a, int *b)
+char** ft_read_comands(char **instr, int *a, int *b)
 {
-	char buf[20];
+	char buf[2];
 	int read_symb;
-	int kolvo_n_buf;
-	int i;
-	int kolvo_n_all;
-	char **pointer;
-	char *n;
-	int kolvo_simb;
-
-	kolvo_simb = 0;
-	i = 0;
-	kolvo_n_buf = 0;
-	kolvo_n_all = 0;
-	ft_bzero(buf, 20);
-	while ((read_symb = read(0, buf,19)))   ///ili simvol
+//	int kolvo_n_buf;
+//	int i;
+//	int kolvo_n_all;
+//	char **pointer;
+//	char *n;
+//	int kolvo_simb;
+//
+//	read_symb = 0;
+//	kolvo_simb = 0;
+//	i = 0;
+//	kolvo_n_buf = 0;
+//	kolvo_n_all = 0;
+	ft_bzero(buf, 2);
+	while (((read_symb = read(0, buf,1)) != 0))   ///ili simvol
 	{
-		pointer = instr;
-		while (buf[i] && buf[i] != 'S')
-			kolvo_n_buf = (buf[i++] == '\n') ? kolvo_n_buf + 1 : kolvo_n_buf;
-		kolvo_n_all += kolvo_n_buf;
-		if (!(instr = (char**)malloc(sizeof(char*) * (kolvo_n_all + 1))))
-			return(-1);
-		i = 0;
-		while(pointer[i])
-		{
-			kolvo_simb = ft_strlen(pointer[i]);
-			if (!(instr[i] = (char*)malloc(sizeof(char)* (kolvo_simb+ 1))))
-				ft_free_all(instr, a, b);
-			ft_strcpy(instr[i], pointer[i]);
-			i++;
-		}
-		int k = 0;
-		while(pointer[k])
-		{
-			free(pointer[k]);
-			k++;
-		}
-		n = buf;
-		k = 0;
-		while((n = ft_strchr(n,'\n')))
-		{
-			while(n[k] != '\n')
-				k++;
-			if (!(instr[i] = (char*)malloc(sizeof(char)* (k+ 1))))
-				ft_free_all(instr, a, b);
-			ft_memcpy(instr[i],n , k);
-			n = &(n[k+1]);
-			i++;
-			if (*n == 'S')
-				return(0);
-		}
-		ft_bzero(buf, 20);
+		if (buf[0] == 'S')
+			return(0);
+		get_next_line(0, instr);
 	}
-	return(0);
+//		pointer = instr;
+//		while (buf[i] && buf[i] != 'S')
+//			kolvo_n_buf = (buf[i++] == '\n') ? kolvo_n_buf + 1 : kolvo_n_buf;
+//		kolvo_n_all += kolvo_n_buf;
+//		if (!(instr = (char**)malloc(sizeof(char*) * (kolvo_n_all + 1))))
+//			return(-1);
+//		i = 0;
+//		while(pointer[i])
+//		{
+//			kolvo_simb = ft_strlen(pointer[i]);
+//			if (!(instr[i] = (char*)malloc(sizeof(char)* (kolvo_simb+ 1))))
+//				ft_free_all(instr, a, b);
+//			ft_strcpy(instr[i], pointer[i]);
+//			ft_strcpy(instr[i], pointer[i]);
+//			i++;
+//		}
+//		int k = 0;
+//		while(pointer[k])
+//		{
+//			free(pointer[k]);
+//			k++;
+//		}
+//		n = buf;
+//		k = 0;
+//		while((n = ft_strchr(n,'\n')))
+//		{
+//			while(n[k] != '\n' && n[k] != 'S')
+//				k++;
+//			if(n[k] == 'S')
+//				return(0);
+//			if (!(instr[i] = (char*)malloc(sizeof(char)* (k+ 1))))
+//				ft_free_all(instr, a, b);
+//			ft_memcpy(instr[i],n , k);
+//			n = &(n[k+1]);
+//			i++;
+//			if (*n == 'S')
+//				return(0);
+//		}
+//		ft_bzero(buf, 20);
+//	}
+	return(instr);
 }
 
 int ft_check_sort(int *a)               //chisla sortirovany
@@ -137,8 +145,8 @@ char**	ft_alg(int argc, int *a, int *b, char **instr)
 
 	i = 0;
 
-	ft_read_comands(instr, a, b);
-	ft_bzero(instr, 5);
+	instr = ft_read_comands(instr, a, b);
+	//ft_bzero(instr, 5);
 	while(instr[i])
 	{
 		ft_do_comands(instr,instr[i], a, b);

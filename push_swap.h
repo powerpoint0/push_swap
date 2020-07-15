@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include "libft.h"
+#include "get_next_line.h"
 
 void*	ft_check_error_and_write_numbers(int argc, char **argv, int *a);
 void*	ft_check_sort_and_b_ps(int argc, int *a, int *b);
