@@ -64,32 +64,49 @@ void ft_do_comands(char **instr_main, char *instr,int *a, int *b)
 char** ft_read_comands(char **instr, int *a, int *b)
 {
 	char buf[2];
-	int read_symb;
-//	int kolvo_n_buf;
-//	int i;
-//	int kolvo_n_all;
-//	char **pointer;
-//	char *n;
-//	int kolvo_simb;
-//
-//	read_symb = 0;
-//	kolvo_simb = 0;
-//	i = 0;
-//	kolvo_n_buf = 0;
-//	kolvo_n_all = 0;
+
+	int i;
+	int k;
+	int kolvo_n_all;
+
+	char **pointer;
+
+	i = 0;
+	pointer = NULL;
+	kolvo_n_all = 0;
 	ft_bzero(buf, 2);
-	while (((read_symb = read(0, buf,1)) != 0))   ///ili simvol
+	while (++kolvo_n_all)
 	{
-		if (buf[0] == 'S')
-			return(0);
-		get_next_line(0, instr);
+		pointer = instr;
+		if (!(instr = (char**)malloc(sizeof(char*) * (kolvo_n_all + 1))))
+			exit(-1);
+		i = 0;
+		if (pointer)
+		{
+			while(pointer[i])
+			{
+				ft_strcpy(instr[i], pointer[i]);
+				i++;
+			}
+			k = 0;
+			while(pointer[k])
+			{
+				free(pointer[k]);
+				k++;
+			}
+		}
+		get_next_line(0, &instr[i]);
+		printf("%s", instr[i]);
+		if (instr[i][0] == 'S')
+			return(instr);
 	}
-//		pointer = instr;
+	return(instr);
+}
+//
 //		while (buf[i] && buf[i] != 'S')
 //			kolvo_n_buf = (buf[i++] == '\n') ? kolvo_n_buf + 1 : kolvo_n_buf;
 //		kolvo_n_all += kolvo_n_buf;
-//		if (!(instr = (char**)malloc(sizeof(char*) * (kolvo_n_all + 1))))
-//			return(-1);
+//
 //		i = 0;
 //		while(pointer[i])
 //		{
@@ -124,8 +141,7 @@ char** ft_read_comands(char **instr, int *a, int *b)
 //		}
 //		ft_bzero(buf, 20);
 //	}
-	return(instr);
-}
+
 
 int ft_check_sort(int *a)               //chisla sortirovany
 {

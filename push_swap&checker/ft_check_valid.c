@@ -125,22 +125,12 @@ void* ft_check_error_and_write_numbers(int argc, char **argv, int *a)
 		write(2,"Error\n", 6);
 		exit(-1);
 	}
-//	if (!(a = (int*)malloc(sizeof(*a) * argc)))
-//		exit(-1);
 	ft_is_all_number(argc, argv, a);
 	ft_write_numbers_one_number(argc, argv, a);
 	ft_check_repeat_numbers(a);
-	//if (ft_check_sort(a))
-
-//	if (!(b = (int*)malloc(sizeof(*b) * argc)))
-//	{
-//		write(2,"Error\n", 6);
-//		free(a);
-//		exit(-1);
-//	}
-//	b[0] = 0;
 	return(a);
 }
+
 /*1.perevod v chisla, proverka: ++++++++++
  *
  * 1.znaki ot 0 do 9 +-				++
