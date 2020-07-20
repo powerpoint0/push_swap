@@ -54,11 +54,11 @@ void ft_do_comands(char **instr_main, char *instr,int *a, int *b)
 	else if( !ft_strcmp(instr, "pa") || !ft_strcmp(instr, "pb"))
 		!ft_strcmp(instr, "pa") ? ft_pa_pb(a, b, 'a') : ft_pa_pb(a, b, 'b');
 	else if( !ft_strcmp(instr, "ra") || !ft_strcmp(instr, "rb"))
-		!ft_strcmp(instr, "ra") ? ft_ra_rb(a, 'a') : ft_ra_rb(a, 'b');
+		!ft_strcmp(instr, "ra") ? ft_ra_rb(a, 'a') : ft_ra_rb(b, 'b');
 	else if( !ft_strcmp(instr, "rr"))
 		ft_rr(a, b);
 	else if( !ft_strcmp(instr, "rra") || !ft_strcmp(instr, "rrb"))
-		!ft_strcmp(instr, "rra") ? ft_rra_rrb(a, 'a') : ft_rra_rrb(a, 'b');
+		!ft_strcmp(instr, "rra") ? ft_rra_rrb(a, 'a') : ft_rra_rrb(b, 'b');
 	else if( !ft_strcmp(instr, "rrr"))
 		ft_rrr(a, b);
 	else
@@ -77,7 +77,8 @@ char** ft_read_comands(int *a, int *b)
 	char *p;
 	char **instr;
 
-	str = NULL;
+	//str = NULL;
+	str = ft_strnew(0);
 	ft_bzero(buf, 1001);
 	while ((red = read(0, buf, 1000)))
 	{
@@ -86,8 +87,8 @@ char** ft_read_comands(int *a, int *b)
 		str = ft_strjoin(str, buf);
 		free(p);
 		ft_bzero(buf, 1001);
+		//printf("%d\n", red);
 	}
-	printf("%d\n", red);
 	instr = ft_strsplit(str, '\n');
 	free(str);
 	return (instr);
