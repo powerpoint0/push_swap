@@ -1,0 +1,4 @@
+/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir
+/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/p_s.dir

@@ -32,8 +32,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f8ca7b35-7b02-48a2-807b-27568ac99ea7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap&amp;checker/checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap&amp;checker/checker.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/push_swap&amp;checker/push_swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap&amp;checker/push_swap.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,7 @@
       <recent name="$PROJECT_DIR$/push_swap" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.p_s">
+  <component name="RunManager" selected="CMake Application.checker">
     <configuration name="checker" type="CMakeRunConfiguration" factoryName="Application" singleton="false" PROGRAM_PARAMS="1 2 3" REDIRECT_INPUT="false" REDIRECT_INPUT_PATH="$PROJECT_DIR$/cmake-build-debug/p_s" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p_s" TARGET_NAME="checker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p_s" RUN_TARGET_NAME="checker">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -132,7 +130,7 @@
       <workItem from="1594828533095" duration="3624000" />
       <workItem from="1594898935475" duration="5071000" />
       <workItem from="1595084619599" duration="7587000" />
-      <workItem from="1595262834405" duration="918000" />
+      <workItem from="1595262834405" duration="3230000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libft/includes/get_next_line.h
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+stdlib.h
+-
+unistd.h
+-
+libft/libft.h
+../libft/includes/libft/libft.h
+
+../libft/libft.h
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+
+../push_swap.h
+stdio.h
+-
+unistd.h
+-
+stdlib.h
+-
+libft.h
+../libft.h
+get_next_line.h
+../get_next_line.h
+
+/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/checker.c
+push_swap.h
+/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/push_swap.h
+

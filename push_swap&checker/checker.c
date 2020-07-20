@@ -84,7 +84,7 @@ char** ft_read_comands(int *a, int *b)
 		p = str;
 		buf[red] = '\0';
 		str = ft_strjoin(str, buf);
-		free(str);
+		free(p);
 		ft_bzero(buf, 1001);
 	}
 	printf("%d\n", red);
