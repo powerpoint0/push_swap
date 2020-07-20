@@ -28,6 +28,7 @@ void ft_main_alg_of_sort(int *a, int *b)
 		n = 1;
 		i++;
 	}
+	ft_sa_sb(a,'a');   //////////////
 	write(1, "S", 1);
 }
 

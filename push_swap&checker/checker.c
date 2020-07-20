@@ -16,7 +16,11 @@
 // мэйк
 //править совместную работу
 
-
+///////
+//net seg, no ne chitaet, red == 0.
+//ne chitaet arg = "1 2 3"- dolzhno?to est args podayutsya v vide odnoi stroki?
+//vozvrashat lokalnye peremennye nelzya, a ukazateli  mozhno?
+//plan: dodelat checker , pristupit k sortirovke s komandami
 
 #include "push_swap.h"
 
@@ -27,18 +31,23 @@ void ft_free_all(char **instr, int *a, int *b)
 	i = 0;
 	free(a);
 	free(b);
-	while(instr[i])
+	if (instr)
 	{
-		free(instr[i]);
-		i++;
+		while (instr[i])
+		{
+			free(instr[i]);
+			i++;
+		}
+		free(instr);
 	}
-	free(instr);
 	exit(0);
 }
 
 void ft_do_comands(char **instr_main, char *instr,int *a, int *b)
 {
-	if( !ft_strcmp(instr, "sa") || !ft_strcmp(instr, "sb"))
+	if (instr[0] == 'S')
+		return;
+	else if( !ft_strcmp(instr, "sa") || !ft_strcmp(instr, "sb"))
 		!ft_strcmp(instr, "sa") ? ft_sa_sb(a, 'a') : ft_sa_sb(a, 'b');
 	else if( !ft_strcmp(instr, "ss"))
 		ft_ss(a, b);
@@ -58,96 +67,39 @@ void ft_do_comands(char **instr_main, char *instr,int *a, int *b)
 		ft_free_all(instr_main, a, b);
 		exit(-1);
 	}
-	ft_bzero(instr, 5);
 }
 
-char** ft_read_comands(char **instr, int *a, int *b)
+char** ft_read_comands(int *a, int *b)
 {
-	char buf[2];
+	int red;
+	char *str;
+	char buf[1001];
+	char *p;
+	char **instr;
 
-	int i;
-	int k;
-	int kolvo_n_all;
-
-	char **pointer;
-
-	i = 0;
-	pointer = NULL;
-	kolvo_n_all = 0;
-	ft_bzero(buf, 2);
-	while (++kolvo_n_all)
+	str = NULL;
+	ft_bzero(buf, 1001);
+	while ((red = read(0, buf, 1000)))
 	{
-		pointer = instr;
-		if (!(instr = (char**)malloc(sizeof(char*) * (kolvo_n_all + 1))))
-			exit(-1);
-		i = 0;
-		if (pointer)
-		{
-			while(pointer[i])
-			{
-				ft_strcpy(instr[i], pointer[i]);
-				i++;
-			}
-			k = 0;
-			while(pointer[k])
-			{
-				free(pointer[k]);
-				k++;
-			}
-		}
-		get_next_line(0, &instr[i]);
-		printf("%s", instr[i]);
-		if (instr[i][0] == 'S')
-			return(instr);
+		p = str;
+		buf[red] = '\0';
+		str = ft_strjoin(str, buf);
+		free(str);
+		ft_bzero(buf, 1001);
 	}
-	return(instr);
+	printf("%d\n", red);
+	instr = ft_strsplit(str, '\n');
+	free(str);
+	return (instr);
 }
-//
-//		while (buf[i] && buf[i] != 'S')
-//			kolvo_n_buf = (buf[i++] == '\n') ? kolvo_n_buf + 1 : kolvo_n_buf;
-//		kolvo_n_all += kolvo_n_buf;
-//
-//		i = 0;
-//		while(pointer[i])
-//		{
-//			kolvo_simb = ft_strlen(pointer[i]);
-//			if (!(instr[i] = (char*)malloc(sizeof(char)* (kolvo_simb+ 1))))
-//				ft_free_all(instr, a, b);
-//			ft_strcpy(instr[i], pointer[i]);
-//			ft_strcpy(instr[i], pointer[i]);
-//			i++;
-//		}
-//		int k = 0;
-//		while(pointer[k])
-//		{
-//			free(pointer[k]);
-//			k++;
-//		}
-//		n = buf;
-//		k = 0;
-//		while((n = ft_strchr(n,'\n')))
-//		{
-//			while(n[k] != '\n' && n[k] != 'S')
-//				k++;
-//			if(n[k] == 'S')
-//				return(0);
-//			if (!(instr[i] = (char*)malloc(sizeof(char)* (k+ 1))))
-//				ft_free_all(instr, a, b);
-//			ft_memcpy(instr[i],n , k);
-//			n = &(n[k+1]);
-//			i++;
-//			if (*n == 'S')
-//				return(0);
-//		}
-//		ft_bzero(buf, 20);
-//	}
-
 
 int ft_check_sort(int *a)               //chisla sortirovany
 {
 	int i;
 
 	i = 1;
+	//if(a[0] == 0)
+		//return(-1);
 	while ((i < a[0]) && (a[i] < a[i + 1]))
 		i++;
 	if (i == a[0])
@@ -155,20 +107,22 @@ int ft_check_sort(int *a)               //chisla sortirovany
 	return (-1);
 }
 
-char**	ft_alg(int argc, int *a, int *b, char **instr)
+char**	ft_alg(int argc, int *a, int *b)
 {
 	int i;
-
+	char **instr;
 	i = 0;
 
-	instr = ft_read_comands(instr, a, b);
-	//ft_bzero(instr, 5);
-	while(instr[i])
+	instr = ft_read_comands(a, b);
+	if (instr)
 	{
-		ft_do_comands(instr,instr[i], a, b);
-		i++;
+		while (instr[i])
+		{
+			ft_do_comands(instr, instr[i], a, b);
+			i++;
+		}
 	}
-	if (b[0]!= 0 || ft_check_sort(a))     //peredelat ft bez exit
+	if (b[0]!= 0 || ft_check_sort(a))
 		write(1, "KO\n", 3);
 	else
 		write(1, "OK\n", 3);
@@ -183,7 +137,7 @@ int main(int argc, char **argv)
 
 	a = NULL;
 	b = NULL;
-	instr = NULL;
+	//instr = NULL;
 	a = ft_check_error_and_write_numbers(argc, argv, a);
 	if (!(b = (int*)malloc(sizeof(*b) * argc)))
 	{
@@ -192,7 +146,14 @@ int main(int argc, char **argv)
 		exit(-1);
 	}
 	b[0] = 0;
-	instr = ft_alg(argc, a, b, instr);
+	instr = ft_alg(argc, a, b);
+//	int i = 0;
+//	if( instr) {
+//		while (instr[i]) {
+//			printf("%s", instr[i]);
+//			i++;
+//		}
+//	}
 	ft_free_all(instr, a, b);
 	return(0);
 }
