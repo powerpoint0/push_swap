@@ -32,9 +32,18 @@
   <component name="ChangeListManager">
     <list default="true" id="f8ca7b35-7b02-48a2-807b-27568ac99ea7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/push_swap&amp;checker/checker.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/push_swap&amp;checker/checker.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/push_swap&amp;checker/ft_check_valid.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/checker.dir/push_swap&amp;checker/ft_check_valid.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/push_swap&amp;checker/ft_check_valid.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/push_swap&amp;checker/ft_check_valid.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/push_swap&amp;checker/push_swap.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/p_s.dir/push_swap&amp;checker/push_swap.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/checker" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/checker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/p_s" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/p_s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/push_swap&amp;checker/checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap&amp;checker/checker.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_swap&amp;checker/ft_check_valid.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap&amp;checker/ft_check_valid.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_swap&amp;checker/ft_functions.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap&amp;checker/ft_functions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/push_swap&amp;checker/push_swap.c" beforeDir="false" afterPath="$PROJECT_DIR$/push_swap&amp;checker/push_swap.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +74,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -75,7 +85,7 @@
       <recent name="$PROJECT_DIR$/push_swap" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.checker">
+  <component name="RunManager" selected="CMake Application.p_s">
     <configuration name="checker" type="CMakeRunConfiguration" factoryName="Application" singleton="false" PROGRAM_PARAMS="1 2 3" REDIRECT_INPUT="false" REDIRECT_INPUT_PATH="$PROJECT_DIR$/cmake-build-debug/p_s" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="p_s" TARGET_NAME="checker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="p_s" RUN_TARGET_NAME="checker">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -133,7 +143,8 @@
       <workItem from="1594828533095" duration="3624000" />
       <workItem from="1594898935475" duration="5071000" />
       <workItem from="1595084619599" duration="7587000" />
-      <workItem from="1595262834405" duration="8946000" />
+      <workItem from="1595262834405" duration="9714000" />
+      <workItem from="1595330072954" duration="6547000" />
     </task>
     <servers />
   </component>
@@ -181,26 +192,26 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1532" y="365" key="EnvironmentVariablesDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1594821763437" />
-    <state width="1934" height="271" key="GridCell.Tab.0.bottom" timestamp="1595271182040">
+    <state width="1934" height="271" key="GridCell.Tab.0.bottom" timestamp="1595337344728">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="370" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1594388490946" />
-    <state width="1934" height="271" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1595271182040" />
-    <state width="1934" height="271" key="GridCell.Tab.0.center" timestamp="1595271182039">
+    <state width="1934" height="271" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1595337344728" />
+    <state width="1934" height="271" key="GridCell.Tab.0.center" timestamp="1595337344727">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="370" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1594388490945" />
-    <state width="1934" height="271" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1595271182039" />
-    <state width="1934" height="271" key="GridCell.Tab.0.left" timestamp="1595271182038">
+    <state width="1934" height="271" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1595337344727" />
+    <state width="1934" height="271" key="GridCell.Tab.0.left" timestamp="1595337344726">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="370" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1594388490945" />
-    <state width="1934" height="271" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1595271182038" />
-    <state width="1934" height="271" key="GridCell.Tab.0.right" timestamp="1595271182039">
+    <state width="1934" height="271" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1595337344726" />
+    <state width="1934" height="271" key="GridCell.Tab.0.right" timestamp="1595337344728">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2518" height="370" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1594388490946" />
-    <state width="1934" height="271" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1595271182039" />
+    <state width="1934" height="271" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1595337344728" />
     <state width="1934" height="448" key="GridCell.Tab.1.bottom" timestamp="1595093309547">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -253,12 +264,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/push_swap&amp;checker/checker.c</url>
-          <line>141</line>
+          <line>140</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/push_swap&amp;checker/checker.c</url>
-          <line>71</line>
+          <line>73</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

@@ -9,6 +9,8 @@ void ft_is_all_number(int argc, char **argv, int *a)
 	i= 0;
 	while(j< argc)   //proverka:vse li chisla
 	{
+		if (argv[j][i] == '\0')
+			exit(-1);
 		if (argv[j][i] == '-' || argv[j][i] == '+')
 			i++;
 		while(argv[j][i])
@@ -25,6 +27,7 @@ void ft_is_all_number(int argc, char **argv, int *a)
 		i = 0;
 		j++;
 	}
+
 }
 
 int		ft_atoi_with_check(const char *str, int *a)
@@ -68,10 +71,16 @@ int ft_write_numbers_one_number(int argc, char **argv, int *a)
 		exit(0);
 	}
 	a[0] = argc - 1;
+	if (a[0] == 0)
+	{
+		write(2, "Error\n", 6);
+		free(a);
+		exit(-1);
+	}
 	return 0;
 }
 
-void ft_check_repeat_numbers(int *a)        //chisla povtoryautsya?
+void ft_check_repeat_numbers(int *a)        //chisla povtoryautsya?  +++
 {
 	int	i;
 	int n;
@@ -96,7 +105,7 @@ void ft_check_repeat_numbers(int *a)        //chisla povtoryautsya?
 	}
 }
 
-void* ft_check_sort_and_b_ps(int argc, int *a, int *b)               //chisla sortirovany
+void* ft_check_sort_and_b_ps(int argc, int *a, int *b)     //+++++          //chisla sortirovany
 {
 	int i;
 
@@ -121,10 +130,7 @@ void* ft_check_sort_and_b_ps(int argc, int *a, int *b)               //chisla so
 void* ft_check_error_and_write_numbers(int argc, char **argv, int *a)
 {
 	if (argc <= 1 || (!(a = (int*)malloc(sizeof(*a) * argc))))
-	{
-		write(2,"Error\n", 6);
 		exit(-1);
-	}
 	ft_is_all_number(argc, argv, a);
 	ft_write_numbers_one_number(argc, argv, a);
 	ft_check_repeat_numbers(a);

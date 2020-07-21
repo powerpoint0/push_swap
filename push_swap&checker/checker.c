@@ -29,8 +29,10 @@ void ft_free_all(char **instr, int *a, int *b)
 	int i;
 
 	i = 0;
-	free(a);
-	free(b);
+	if(a)
+		free(a);
+	if(b)
+		free(b);
 	if (instr)
 	{
 		while (instr[i])
@@ -45,14 +47,14 @@ void ft_free_all(char **instr, int *a, int *b)
 
 void ft_do_comands(char **instr_main, char *instr,int *a, int *b)
 {
-	if (instr[0] == 'S')
-		return;
-	else if( !ft_strcmp(instr, "sa") || !ft_strcmp(instr, "sb"))
+	//if (instr[0] == 'S')
+		//return;
+	if( !ft_strcmp(instr, "sa") || !ft_strcmp(instr, "sb"))
 		!ft_strcmp(instr, "sa") ? ft_sa_sb(a, 'a') : ft_sa_sb(a, 'b');
 	else if( !ft_strcmp(instr, "ss"))
 		ft_ss(a, b);
 	else if( !ft_strcmp(instr, "pa") || !ft_strcmp(instr, "pb"))
-		!ft_strcmp(instr, "pa") ? ft_pa_pb(a, b, 'a') : ft_pa_pb(a, b, 'b');
+		!ft_strcmp(instr, "pa") ? ft_pa_pb(a, b, 'a') : ft_pa_pb(b, a, 'b');
 	else if( !ft_strcmp(instr, "ra") || !ft_strcmp(instr, "rb"))
 		!ft_strcmp(instr, "ra") ? ft_ra_rb(a, 'a') : ft_ra_rb(b, 'b');
 	else if( !ft_strcmp(instr, "rr"))
@@ -77,7 +79,6 @@ char** ft_read_comands(int *a, int *b)
 	char *p;
 	char **instr;
 
-	//str = NULL;
 	str = ft_strnew(0);
 	ft_bzero(buf, 1001);
 	while ((red = read(0, buf, 1000)))
@@ -99,8 +100,8 @@ int ft_check_sort(int *a)               //chisla sortirovany
 	int i;
 
 	i = 1;
-	//if(a[0] == 0)
-		//return(-1);
+	if(a[0] == 0)
+		return(-1);
 	while ((i < a[0]) && (a[i] < a[i + 1]))
 		i++;
 	if (i == a[0])
@@ -137,8 +138,6 @@ int main(int argc, char **argv)
 	char **instr;
 
 	a = NULL;
-	b = NULL;
-	//instr = NULL;
 	a = ft_check_error_and_write_numbers(argc, argv, a);
 	if (!(b = (int*)malloc(sizeof(*b) * argc)))
 	{

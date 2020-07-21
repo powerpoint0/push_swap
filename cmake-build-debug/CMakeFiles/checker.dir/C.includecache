@@ -44,3 +44,19 @@ get_next_line.h
 push_swap.h
 /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/push_swap.h
 
+/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/ft_functions.c
+../push_swap.h
+/Users/cjoaquin/CLionProjects/p_s/push_swap.h
+
+/Users/cjoaquin/CLionProjects/p_s/push_swap.h
+stdio.h
+-
+unistd.h
+-
+stdlib.h
+-
+libft.h
+/Users/cjoaquin/CLionProjects/p_s/libft.h
+get_next_line.h
+/Users/cjoaquin/CLionProjects/p_s/get_next_line.h
+

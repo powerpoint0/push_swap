@@ -1,11 +1,8 @@
 #include "../push_swap.h"
 
-
-
-void ft_main_alg_of_sort(int *a, int *b)
+void ft_main_alg_of_sort(int *a, int *b)  //sortirovka   //napisat sortirovku puzyrkom для начала +++
 {
-	//sortirovka
-	//napisat sortirovku puzyrkom для начала +++
+
 	int i;
 	int c;
 	int n;
@@ -28,8 +25,8 @@ void ft_main_alg_of_sort(int *a, int *b)
 		n = 1;
 		i++;
 	}
-	ft_sa_sb(a,'a');   //////////////
-	write(1, "S", 1);
+	//ft_sa_sb(a,'a');   //////////////
+	//write(1, "S", 1);
 }
 
 

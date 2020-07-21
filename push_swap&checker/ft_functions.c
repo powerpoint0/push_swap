@@ -83,10 +83,10 @@ void ft_ra_rb(int *a, char letter)
 	int k;
 	int c;
 
-	c = a[1];
 	k = 1;
 	if (a[0] <= 1)
 		return;
+	c = a[1];
 	while(k < a[0])
 	{
 		a[k] = a[k + 1];
