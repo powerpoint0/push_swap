@@ -1,36 +1,51 @@
 #include "../push_swap.h"
 
-void ft_is_all_number(int argc, char **argv, int *a)
+int	ft_is_all_numbers2(char **argv, int j)
 {
-	int j;
 	int	i;
+	int k;
 
-	j = 1;
+	k = 0;
 	i= 0;
-	while(j< argc)   //proverka:vse li chisla
+	while(argv[j][i] != '\0')
 	{
-		if (argv[j][i] == '\0')
-			exit(-1);
 		if (argv[j][i] == '-' || argv[j][i] == '+')
 			i++;
-		while(argv[j][i])
-		{
-			if(ft_isdigit(argv[j][i]))
+		while (argv[j][i] && argv[j][i] != ' ') {
+			if (ft_isdigit(argv[j][i]))
 				i++;
-			else
-			{
+			else {
 				write(2, "Error\n", 6);
-				free(a);
 				exit(-1);
 			}
 		}
-		i = 0;
-		j++;
+		k++;
+		if (argv[j][i] == ' ')
+			i++;
 	}
-
+	return(k);
 }
 
-int		ft_atoi_with_check(const char *str, int *a)
+int ft_is_all_number(int argc, char **argv)
+{
+	int j;
+	int k;
+
+	k = 0;
+	j = 1;
+
+	while(j< argc)   //proverka:vse li chisla
+	{
+		if (argc == 2 && (argv[1][0] == '\0'))
+			exit(-1);
+		k += ft_is_all_numbers2(argv, j);
+		j++;
+	}
+	//printf("%d\n", k);
+	return(k);
+}
+
+int		ft_atoi_with_check(const char *str)
 {
 	long long	sign;
 	long long	resalt;
@@ -50,33 +65,53 @@ int		ft_atoi_with_check(const char *str, int *a)
 	if (resalt > INT32_MAX || resalt < INT32_MIN)				//some arguments are bigger than an integer,
 	{
 		write(2, "Error\n", 6);
-		free(a);
 		exit(-1);
 	}
 	return ((int)resalt);
 }
 
-int ft_write_numbers_one_number(int argc, char **argv, int *a)
+int ft_write_numbers_one_number(char **argv, int *a, int kolvo_num)
 {
 	int j;
 	int	i;
+	char *str;
+	int k;
 
-	j = 0;
-	i = 1;
-	while(j++ < argc-1)//zapisyvaem chisla v massiv int
-		a[i++] = ft_atoi_with_check(argv[j], a);
-	if(argc == 2)// odno chislo
+	k = 0;
+	j = 1;
+	i = 0;
+	str = argv[1];
+	while(i++ < kolvo_num)//zapisyvaem chisla v massiv int
+	{
+		a[i] = ft_atoi_with_check(str);
+		while(argv[j][k] && argv[j][k]!= ' ')
+			k++;
+		if (i < kolvo_num)
+		{
+			if(argv[j][k] == ' ')
+				str = &argv[j][++k];
+			else
+			{
+				j++;
+				k = 0;
+				while(!argv[j][k])
+					j++;
+				str = &argv[j][k];
+			}
+		}
+	}
+	if(kolvo_num == 1)// odno chislo
 	{
 		free(a);
 		exit(0);
 	}
-	a[0] = argc - 1;
-	if (a[0] == 0)
+	if (kolvo_num == 0)
 	{
 		write(2, "Error\n", 6);
 		free(a);
 		exit(-1);
 	}
+	a[0] = kolvo_num;
 	return 0;
 }
 
@@ -105,7 +140,7 @@ void ft_check_repeat_numbers(int *a)        //chisla povtoryautsya?  +++
 	}
 }
 
-void* ft_check_sort_and_b_ps(int argc, int *a, int *b)     //+++++          //chisla sortirovany
+void* ft_check_sort_and_b_ps(int *a, int *b)     //+++++          //chisla sortirovany
 {
 	int i;
 
@@ -117,7 +152,7 @@ void* ft_check_sort_and_b_ps(int argc, int *a, int *b)     //+++++          //ch
 		free(a);
 		exit(0);
 	}
-	if (!(b = (int*)malloc(sizeof(*b) * argc)))
+	if (!(b = (int*)malloc(sizeof(*b) * a[0])))
 	{
 		write(2,"Error\n", 6);
 		free(a);
@@ -129,10 +164,16 @@ void* ft_check_sort_and_b_ps(int argc, int *a, int *b)     //+++++          //ch
 
 void* ft_check_error_and_write_numbers(int argc, char **argv, int *a)
 {
-	if (argc <= 1 || (!(a = (int*)malloc(sizeof(*a) * argc))))
+	int kolvo_numbers;
+
+	if (argc <= 1)
 		exit(-1);
-	ft_is_all_number(argc, argv, a);
-	ft_write_numbers_one_number(argc, argv, a);
+	kolvo_numbers = ft_is_all_number(argc, argv);
+	//printf("%d\n", kolvo_numbers);
+	if (!(a = (int*)malloc(sizeof(*a) * (kolvo_numbers + 1))))
+		exit(-1);
+	ft_write_numbers_one_number(argv, a, kolvo_numbers);
+
 	ft_check_repeat_numbers(a);
 	return(a);
 }

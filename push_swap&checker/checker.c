@@ -47,8 +47,6 @@ void ft_free_all(char **instr, int *a, int *b)
 
 void ft_do_comands(char **instr_main, char *instr,int *a, int *b)
 {
-	//if (instr[0] == 'S')
-		//return;
 	if( !ft_strcmp(instr, "sa") || !ft_strcmp(instr, "sb"))
 		!ft_strcmp(instr, "sa") ? ft_sa_sb(a, 'a') : ft_sa_sb(a, 'b');
 	else if( !ft_strcmp(instr, "ss"))
@@ -139,7 +137,7 @@ int main(int argc, char **argv)
 
 	a = NULL;
 	a = ft_check_error_and_write_numbers(argc, argv, a);
-	if (!(b = (int*)malloc(sizeof(*b) * argc)))
+	if (!(b = (int*)malloc(sizeof(*b) * a[0])))
 	{
 		write(2,"Error\n", 6);
 		free(a);
