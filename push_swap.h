@@ -14,12 +14,15 @@ int		ft_atoi_with_check(const char *str);
 int		ft_write_numbers_one_number(char **argv, int *a, int kolvo_num);
 void	ft_check_repeat_numbers(int *a);
 int		ft_check_sort(int *a);
-void	ft_sa_sb(int *a, char letter);
-void	ft_ss(int *a, int *b);
-void	ft_pa_pb(int *a, int *b, char letter);
-void	ft_ra_rb(int *a, char letter);
-void	ft_rr(int *a,int *b);
-void	ft_rra_rrb(int *a, char letter);
-void	ft_rrr(int *a, int *b);
+int 	ft_sa_sb(int *a, char letter);
+int		ft_ss(int *a, int *b);
+int		ft_pa_pb(int *a, int *b, char letter);
+int		ft_ra_rb(int *a, char letter);
+int		ft_rr(int *a,int *b);
+int		ft_rra_rrb(int *a, char letter);
+int		ft_rrr(int *a, int *b);
+void	ft_2num(int *a);
+void	ft_3num(int *a);
+void	ft_5num(int *a, int *b);
 
 #endif

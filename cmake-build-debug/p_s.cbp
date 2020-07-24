@@ -412,6 +412,9 @@
 		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap&amp;checker/push_swap.c">
 			<Option target="p_s"/>
 		</Unit>
+		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap&amp;checker/sort.c">
+			<Option target="p_s"/>
+		</Unit>
 		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap.h">
 			<Option target="checker"/>
 			<Option target="p_s"/>

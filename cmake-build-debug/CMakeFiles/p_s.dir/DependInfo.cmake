@@ -71,6 +71,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/ft_check_valid.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/p_s.dir/push_swap&checker/ft_check_valid.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/ft_functions.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/p_s.dir/push_swap&checker/ft_functions.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/push_swap.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/p_s.dir/push_swap&checker/push_swap.c.o"
+  "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/p_s.dir/push_swap&checker/sort.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

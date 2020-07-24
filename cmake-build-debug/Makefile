@@ -2170,6 +2170,33 @@ push_swap&checker/push_swap.c.s:
 	$(MAKE) -f CMakeFiles/p_s.dir/build.make "CMakeFiles/p_s.dir/push_swap&checker/push_swap.c.s"
 .PHONY : push_swap&checker/push_swap.c.s
 
+push_swap&checker/sort.o: push_swap&checker/sort.c.o
+
+.PHONY : push_swap&checker/sort.o
+
+# target to build an object file
+push_swap&checker/sort.c.o:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make "CMakeFiles/p_s.dir/push_swap&checker/sort.c.o"
+.PHONY : push_swap&checker/sort.c.o
+
+push_swap&checker/sort.i: push_swap&checker/sort.c.i
+
+.PHONY : push_swap&checker/sort.i
+
+# target to preprocess a source file
+push_swap&checker/sort.c.i:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make "CMakeFiles/p_s.dir/push_swap&checker/sort.c.i"
+.PHONY : push_swap&checker/sort.c.i
+
+push_swap&checker/sort.s: push_swap&checker/sort.c.s
+
+.PHONY : push_swap&checker/sort.s
+
+# target to generate assembly for a file
+push_swap&checker/sort.c.s:
+	$(MAKE) -f CMakeFiles/p_s.dir/build.make "CMakeFiles/p_s.dir/push_swap&checker/sort.c.s"
+.PHONY : push_swap&checker/sort.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2384,6 +2411,9 @@ help:
 	@echo "... push_swap&checker/push_swap.o"
 	@echo "... push_swap&checker/push_swap.i"
 	@echo "... push_swap&checker/push_swap.s"
+	@echo "... push_swap&checker/sort.o"
+	@echo "... push_swap&checker/sort.i"
+	@echo "... push_swap&checker/sort.s"
 .PHONY : help
 
 

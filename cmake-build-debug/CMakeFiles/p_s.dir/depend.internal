@@ -195,3 +195,8 @@ CMakeFiles/p_s.dir/push_swap&checker/push_swap.c.o
  ../libft/libft.h
  /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/push_swap.c
  /Users/cjoaquin/CLionProjects/p_s/push_swap.h
+CMakeFiles/p_s.dir/push_swap&checker/sort.c.o
+ ../libft/includes/get_next_line.h
+ ../libft/libft.h
+ /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort.c
+ /Users/cjoaquin/CLionProjects/p_s/push_swap.h

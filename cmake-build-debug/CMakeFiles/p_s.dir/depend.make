@@ -195,3 +195,8 @@ CMakeFiles/p_s.dir/push_swap&checker/push_swap.c.o: ../libft/libft.h
 CMakeFiles/p_s.dir/push_swap&checker/push_swap.c.o: ../push_swap&checker/push_swap.c
 CMakeFiles/p_s.dir/push_swap&checker/push_swap.c.o: ../push_swap.h
 
+CMakeFiles/p_s.dir/push_swap&checker/sort.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/p_s.dir/push_swap&checker/sort.c.o: ../libft/libft.h
+CMakeFiles/p_s.dir/push_swap&checker/sort.c.o: ../push_swap&checker/sort.c
+CMakeFiles/p_s.dir/push_swap&checker/sort.c.o: ../push_swap.h
+
