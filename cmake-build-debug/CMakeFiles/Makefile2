@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/cjoaquin/CLionProjects/p_s/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/checker.dir/all
-all: CMakeFiles/p_s.dir/all
+all: CMakeFiles/push_swap.dir/all
 
 .PHONY : all
 
@@ -65,7 +65,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/checker.dir/clean
-clean: CMakeFiles/p_s.dir/clean
+clean: CMakeFiles/push_swap.dir/clean
 
 .PHONY : clean
 
@@ -97,31 +97,31 @@ CMakeFiles/checker.dir/clean:
 .PHONY : CMakeFiles/checker.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/p_s.dir
+# Target rules for target CMakeFiles/push_swap.dir
 
 # All Build rule for target.
-CMakeFiles/p_s.dir/all:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/depend
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target p_s"
-.PHONY : CMakeFiles/p_s.dir/all
+CMakeFiles/push_swap.dir/all:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/depend
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target push_swap"
+.PHONY : CMakeFiles/push_swap.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/p_s.dir/rule: cmake_check_build_system
+CMakeFiles/push_swap.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles 51
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/p_s.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/push_swap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/p_s.dir/rule
+.PHONY : CMakeFiles/push_swap.dir/rule
 
 # Convenience name for target.
-p_s: CMakeFiles/p_s.dir/rule
+push_swap: CMakeFiles/push_swap.dir/rule
 
-.PHONY : p_s
+.PHONY : push_swap
 
 # clean rule for target.
-CMakeFiles/p_s.dir/clean:
-	$(MAKE) -f CMakeFiles/p_s.dir/build.make CMakeFiles/p_s.dir/clean
-.PHONY : CMakeFiles/p_s.dir/clean
+CMakeFiles/push_swap.dir/clean:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/clean
+.PHONY : CMakeFiles/push_swap.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

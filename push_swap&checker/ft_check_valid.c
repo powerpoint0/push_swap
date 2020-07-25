@@ -34,7 +34,7 @@ int ft_is_all_number(int argc, char **argv)
 	k = 0;
 	j = 1;
 
-	while(j< argc)   //proverka:vse li chisla
+	while(j< argc)
 	{
 		if (argc == 2 && (argv[1][0] == '\0'))
 			exit(-1);
@@ -115,7 +115,7 @@ int ft_write_numbers_one_number(char **argv, int *a, int kolvo_num)
 	return 0;
 }
 
-void ft_check_repeat_numbers(int *a)        //chisla povtoryautsya?  +++
+void ft_check_repeat_numbers(int *a)        //chisla povtoryautsya?
 {
 	int	i;
 	int n;
@@ -140,7 +140,7 @@ void ft_check_repeat_numbers(int *a)        //chisla povtoryautsya?  +++
 	}
 }
 
-void* ft_check_sort_and_b_ps(int *a, int *b)     //+++++          //chisla sortirovany
+void* ft_check_sort_and_b_ps(int *a, int *b)  //+++++          //chisla sortirovany
 {
 	int i;
 

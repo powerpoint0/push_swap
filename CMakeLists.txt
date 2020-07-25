@@ -7,7 +7,7 @@ include_directories(.)
 include_directories(libft)
 include_directories(libft/includes)
 
-add_executable(p_s
+add_executable(push_swap
 		libft/includes/get_next_line.h
 		libft/includes/libft.h
 		libft/ft_atoi.c
