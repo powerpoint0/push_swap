@@ -3,10 +3,10 @@
 void ft_main_alg_of_sort(int *a, int *b)  //sortirovka   //napisat sortirovku puzyrkom для начала +++
 {
 	if (a[0] == 2)
-		ft_2num(a);
+		ft_2num(a, 'a');
 	if (a[0] == 3)
-		ft_3num(a);
-	if (a[0] == 5)
+		ft_3num(a, 'a');
+	if (a[0] >= 5)
 		ft_5num(a, b);
 //	int i;
 //	int c;
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 {
 	int *a;
 	int *b;
-	//int i = 0;
+	int i = 0;
 
 	a = NULL;
 	b = NULL;

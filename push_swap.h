@@ -21,8 +21,8 @@ int		ft_ra_rb(int *a, char letter);
 int		ft_rr(int *a,int *b);
 int		ft_rra_rrb(int *a, char letter);
 int		ft_rrr(int *a, int *b);
-void	ft_2num(int *a);
-void	ft_3num(int *a);
+void	ft_2num(int *a,char letter);
+void	ft_3num(int *a,char letter);
 void	ft_5num(int *a, int *b);
 
 #endif
