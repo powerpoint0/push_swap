@@ -103,8 +103,8 @@ void ft_5num(int *a, int *b)
 
 	if(ft_check_sort(a))
 		ft_3num(a, 'a');
-	if(ft_check_sort(b))
-		ft_2num(b, 'b');
+	//if(ft_check_sort(b))
+		//ft_2num(b, 'b');
 	while(b[0])
 	{
 		max = ft_find_max(a);
@@ -124,6 +124,7 @@ void ft_5num(int *a, int *b)
 				}
 				ft_pa_pb(a, b, 'a');
 			}
+			//ft_ra_rb(a, 'a');
 		}
 		else if (b[1] < min)
 		{
@@ -142,7 +143,7 @@ void ft_5num(int *a, int *b)
 		}
 		else
 		{
-			while (b[1] > a[1])
+			while (!(b[1] > a[a[0]] && b[1] < a[1]))
 				ft_ra_rb(a, 'a');
 			ft_pa_pb(a, b, 'a');
 		}
