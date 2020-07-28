@@ -24,5 +24,6 @@ int		ft_rrr(int *a, int *b);
 void	ft_2num(int *a,char letter);
 void	ft_3num(int *a,char letter);
 void	ft_5num(int *a, int *b);
+int		ft_many_numbers(int *a, int *b);
 
 #endif

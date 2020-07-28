@@ -4,10 +4,12 @@ void ft_main_alg_of_sort(int *a, int *b)  //sortirovka   //napisat sortirovku pu
 {
 	if (a[0] == 2)
 		ft_2num(a, 'a');
-	if (a[0] == 3)
+	else if (a[0] == 3)
 		ft_3num(a, 'a');
-	if (a[0] >= 5)
+	else if (a[0] > 3 && a[0] <= 20)
 		ft_5num(a, b);
+	else if (a[0] > 20)
+		ft_many_numbers(a, b);
 //	int i;
 //	int c;
 //	int n;
@@ -45,11 +47,11 @@ int main(int argc, char **argv)
 	a = ft_check_error_and_write_numbers(argc, argv, a);
 	b = ft_check_sort_and_b_ps(a, b);
 	ft_main_alg_of_sort(a, b);
-//	while ((i <= a[0] || i <= b[0]))
-//	{
-//		printf("%d    %d\n", a[i], b[i]);
-//		i++;
-//	}
+	while ((i <= a[0] || i <= b[0]))
+	{
+		printf("%d    %d\n", a[i], b[i]);
+		i++;
+	}
 	free(a);
 	free(b);
 	return 0;

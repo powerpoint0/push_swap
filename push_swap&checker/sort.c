@@ -92,6 +92,31 @@ int ft_find_index_elem(int *a, int number)
 	return(-1);
 }
 
+int ft_bubble_sort(int *a)
+{
+	int i;
+	int c;
+	int n;
+
+	n = 1;
+	i = 1;
+	while (i < a[0]) {
+		while (i + n <= a[0]) {
+			if (a[i] > a[i + n])
+			{
+				c = a[i];
+				a[i] = a[i + n];
+				a[i + n] = c;
+			}
+			n++;
+		}
+		n = 1;
+		i++;
+	}
+}
+
+
+
 void ft_5num(int *a, int *b)
 {
 
@@ -103,8 +128,6 @@ void ft_5num(int *a, int *b)
 
 	if(ft_check_sort(a))
 		ft_3num(a, 'a');
-	//if(ft_check_sort(b))
-		//ft_2num(b, 'b');
 	while(b[0])
 	{
 		max = ft_find_max(a);
@@ -124,7 +147,7 @@ void ft_5num(int *a, int *b)
 				}
 				ft_pa_pb(a, b, 'a');
 			}
-			//ft_ra_rb(a, 'a');
+			ft_ra_rb(a, 'a');
 		}
 		else if (b[1] < min)
 		{
@@ -148,11 +171,97 @@ void ft_5num(int *a, int *b)
 			ft_pa_pb(a, b, 'a');
 		}
 	}
-	while(ft_check_sort(a))
+//	while(ft_check_sort(a))
+//	{
+//		if(ft_find_index_elem(a, min) > a[0] / 2 + a[0]%2)
+//			ft_rra_rrb(a, 'a');
+//		else
+//			ft_ra_rb(a, 'a');
+//	}
+}
+
+void	*ft_memcpy_int(void *dst, const void *src, size_t n)
+{
+	ssize_t 	*p;
+	ssize_t 	*p2;
+
+	if (n == 0)
+		return (dst);
+	if ((ssize_t*)dst == 0 && (ssize_t *)src == 0)
+		return (dst);
+	p = (ssize_t *)dst;
+	p2 = (ssize_t *)src;
+	while (n--)
+		*p++ = *p2++;
+	return (dst);
+}
+
+int		ft_many_begin(int *a, int *b, int *c, int index)
+{
+
+	int i;
+
+	i = 0;
+
+	while (i < 5)
 	{
-		if(ft_find_index_elem(a, min) > a[0] / 2 + a[0]%2)
-			ft_rra_rrb(a, 'a');
+		if (b[1] <= c[index])
+		{
+			ft_pa_pb(a, b, 'a');
+			i++;
+		}
 		else
-			ft_ra_rb(a, 'a');
+			ft_ra_rb(b, 'b');
 	}
+//	i = 0;
+//	while(i <= c[0])
+//	{
+//		printf("%d\n", c[i]);
+//		i++;
+//	}
+}
+
+int		ft_many_numbers(int *a, int *b)
+{
+	int all_in_a;
+	int submassiv;
+	int i;
+	int k;
+	int *c;
+	int index;
+
+
+	i = 1;
+	all_in_a = a[0];
+	submassiv = a[0];
+	while (a[0])
+		ft_pa_pb(b, a, 'b');
+	c = ft_memalloc(a[0]+ 1);
+	c = ft_memcpy_int(c, b, b[0] + 1);
+	ft_bubble_sort(c);
+
+	index = 0;
+	while (submassiv > 0)
+	{
+		i = 1;
+		if (submassiv >= 5)
+			index += 5;
+		else
+			index += submassiv;
+		//index += a[0];
+		ft_many_begin(a, b, c, index);
+		int c = b[0];
+		b[0] = 0;
+		int d = a[0];
+		a[0] =(submassiv >= 5) ? 5 : submassiv;
+		ft_5num(a, b);
+		k = a[0];
+		b[0] = c;
+		a[0] = d;
+		while (i++ <= k)
+			ft_ra_rb(a, 'a');
+		submassiv -= 5;
+	}
+	//ft_5num(a, b);
+	return(0);
 }
