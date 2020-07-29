@@ -7,34 +7,10 @@ void ft_main_alg_of_sort(int *a, int *b)  //sortirovka   //napisat sortirovku pu
 	else if (a[0] == 3)
 		ft_3num(a, 'a');
 	else if (a[0] > 3 && a[0] <= 20)
-		ft_5num(a, b);
+		ft_5num(a, b, a[0]);
 	else if (a[0] > 20)
 		ft_many_numbers(a, b);
-//	int i;
-//	int c;
-//	int n;
-//
-//	n = 1;
-//	i = 1;
-//	while (i < a[0])
-//	{
-//		while (i + n <= a[0])
-//		{
-//			if (a[i] > a[i + n])
-//			{
-//				//ft_sa_sb(a,'a');
-//				c = a[i];
-//				a[i] = a[i + n];
-//				a[i + n] = c;
-//			}
-//			n++;
-//		}
-//		n = 1;
-//		i++;
-//	}
-//	//ft_sa_sb(a,'a');   //////////////
 }
-
 
 int main(int argc, char **argv)
 {
@@ -47,11 +23,11 @@ int main(int argc, char **argv)
 	a = ft_check_error_and_write_numbers(argc, argv, a);
 	b = ft_check_sort_and_b_ps(a, b);
 	ft_main_alg_of_sort(a, b);
-	while ((i <= a[0] || i <= b[0]))
-	{
-		printf("%d    %d\n", a[i], b[i]);
-		i++;
-	}
+//	while ((i <= a[0] || i <= b[0]))
+//	{
+//		printf("%d    %d\n", a[i], b[i]);
+//		i++;
+//	}
 	free(a);
 	free(b);
 	return 0;

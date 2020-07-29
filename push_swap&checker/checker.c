@@ -86,7 +86,6 @@ char** ft_read_comands(int *a, int *b)
 		str = ft_strjoin(str, buf);
 		free(p);
 		ft_bzero(buf, 1001);
-		//printf("%d\n", red);
 	}
 	instr = ft_strsplit(str, '\n');
 	free(str);

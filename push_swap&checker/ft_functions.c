@@ -54,13 +54,14 @@ int ft_ss(int *a, int *b)
 	return(0);
 }
 
-int ft_pa_pb(int *a, int *b, char letter) //++
+int ft_pa_pb(int *a, int *b, char letter, int all_in_a) //++
 {
 	int k;
 
 	k = a[0];
 	if (b[0] == 0)
 		return(-1);
+	k = all_in_a -1;
 	while (k)
 	{
 		a[k + 1] = a[k];
@@ -69,7 +70,7 @@ int ft_pa_pb(int *a, int *b, char letter) //++
 	a[1] = b[1];
 	a[0]++;
 	k = 1;
-	while(k < b[0])
+	while(k < all_in_a)
 	{
 		b[k] = b[k + 1];
 		k++;

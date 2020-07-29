@@ -41,7 +41,6 @@ int ft_is_all_number(int argc, char **argv)
 		k += ft_is_all_numbers2(argv, j);
 		j++;
 	}
-	//printf("%d\n", k);
 	return(k);
 }
 
@@ -81,7 +80,7 @@ int ft_write_numbers_one_number(char **argv, int *a, int kolvo_num)
 	j = 1;
 	i = 0;
 	str = argv[1];
-	while(i++ < kolvo_num)//zapisyvaem chisla v massiv int
+	while(i++ < kolvo_num)   //zapisyvaem chisla v massiv int
 	{
 		a[i] = ft_atoi_with_check(str);
 		while(argv[j][k] && argv[j][k]!= ' ')
