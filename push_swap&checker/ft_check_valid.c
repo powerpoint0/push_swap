@@ -151,7 +151,7 @@ void* ft_check_sort_and_b_ps(int *a, int *b)  //+++++          //chisla sortirov
 		free(a);
 		exit(0);
 	}
-	if (!(b = (int*)malloc(sizeof(*b) * a[0])))
+	if (!(b = (int*)malloc(sizeof(*b) * (a[0] + 1))))
 	{
 		write(2,"Error\n", 6);
 		free(a);

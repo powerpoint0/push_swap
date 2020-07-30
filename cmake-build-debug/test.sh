@@ -25,7 +25,7 @@ MINNUMBER=10000;
 MEDIUM=0;
 TESTNUM=1;
 
-NUMBERS=100
+NUMBERS=21
 
     while [ ${YESNO} -lt ${NUMBERS} ]; do
         TEMP=$((RANDOM%${RANGENUM}+0))" ";
@@ -39,4 +39,4 @@ NUMBERS=100
 
 
     echo ${A}
-    ./push_swap ${A} | wc -l #  ./checker ${A}
+   ./push_swap ${A} | ./checker ${A} #wc -l
