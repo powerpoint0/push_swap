@@ -64,12 +64,6 @@ void ft_do_comands(char **instr_main, char *instr,int *a, int *b)
 		!ft_strcmp(instr, "rra") ? ft_rra_rrb(a, 'a') : ft_rra_rrb(b, 'b');
 	else if( !ft_strcmp(instr, "rrr"))
 		ft_rrr(a, b);
-//	else
-//	{
-//		write(2, "Error\n", 6);
-//		ft_free_all(instr_main, a, b);
-//		exit(-1);
-//	}
 }
 
 char** ft_read_comands(int *a, int *b)
@@ -118,14 +112,14 @@ char**	ft_alg(int argc, int *a, int *b)
 	i = 0;
 	instr = ft_read_comands(a, b);
 		//int i = 0;
-	if( instr) {
-		while (instr[i]) {
-			printf("%s\n", instr[i]);
-			i++;
-		}
-	}
-	i = 0;
-	printf("\n");
+//	if( instr) {
+//		while (instr[i]) {
+//			printf("%s\n", instr[i]);
+//			i++;
+//		}
+//	}
+//	i = 0;
+//	printf("\n");
 	if (instr)
 	{
 		while (instr[i])
@@ -135,11 +129,11 @@ char**	ft_alg(int argc, int *a, int *b)
 		}
 	}
 	i = 0;
-		while ((i <= a[0] || i <= b[0]))
-	{
-		printf("%d    %d\n", a[i], b[i]);
-		i++;
-	}
+//		while ((i <= a[0] || i <= b[0]))
+//	{
+//		printf("%d    %d\n", a[i], b[i]);
+//		i++;
+//	}
 
 	if (b[0]!= 0 || ft_check_sort(a))
 		write(1, "KO\n", 3);
@@ -163,11 +157,11 @@ int main(int argc, char **argv)
 		exit(-1);
 	}
 	b[0] = 0;
-		while ((i <= a[0] || i <= b[0]))
-	{
-		printf("%d    %d\n", a[i], b[i]);
-		i++;
-	}
+//		while ((i <= a[0] || i <= b[0]))
+//	{
+//		printf("%d    %d\n", a[i], b[i]);
+//		i++;
+//	}
 
 	instr = ft_alg(argc, a, b);
 

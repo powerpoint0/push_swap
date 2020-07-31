@@ -115,68 +115,75 @@ int ft_bubble_sort(int *a)
 	}
 }
 
-
-
-void ft_5num(int *a, int *b,int all_in_a)
+void ft_5num_(int *a, int *b,int all_in_a)
 {
-
-	int max;
-	int min;
-
 	while (a[0] > 3)
 		ft_pa_pb(b, a , 'b', all_in_a);
 	if(ft_check_sort(a))
 		ft_3num(a, 'a');
 	while(b[0])
 	{
-		max = ft_find_max(a);
-		min = ft_find_min(a);
-		if (b[1] > max)
-		{
-			if (a[a[0]] == max)
-				ft_pa_pb(a, b, 'a', all_in_a);
-
-			else {
-				while (a[a[0]] != max)
-				{
-					if (ft_find_index_elem(a, max) >= a[0] / 2 + a[0]% 2)
-						ft_rra_rrb(a, 'a');
-					else
-						ft_ra_rb(a, 'a');
-				}
-				ft_pa_pb(a, b, 'a', all_in_a);
-			}
-			ft_ra_rb(a, 'a');
-		}
-		else if (b[1] < min)
-		{
-			if (a[1] == min)
-				ft_pa_pb(a, b, 'a', all_in_a);
-			else {
-				while (a[1] != min)
-				{
-					if (ft_find_index_elem(a, min) > a[0] / 2 + a[0]%2)
-						ft_rra_rrb(a, 'a');
-					else
-						ft_ra_rb(a, 'a');
-				}
-				ft_pa_pb(a, b, 'a', all_in_a);
-			}
-		}
-		else
-		{
-			while (!(b[1] > a[a[0]] && b[1] < a[1]))
-				ft_ra_rb(a, 'a');
-			ft_pa_pb(a, b, 'a', all_in_a);
-		}
+		ft_5num2(a, b, a[0]+ b[0]);
 	}
-	while(ft_check_sort(a))
+		while(ft_check_sort(a))
 	{
-		if(ft_find_index_elem(a, min) > a[0] / 2 + a[0]%2)
+		if(ft_find_index_elem(a, ft_find_min(a)) > a[0] / 2 + a[0]%2)
 			ft_rra_rrb(a, 'a');
 		else
 			ft_ra_rb(a, 'a');
 	}
+}
+
+void ft_5num2(int *a, int *b,int all_in_a)
+{
+
+	int max;
+	int min;
+
+		if (a[0] == 0)
+			ft_pa_pb(a, b, 'a', a[0]+b[0] );
+		else {
+//			if (a[0] == 3)
+//			{
+//				ft_3num(a, 'a');
+//				return;
+//			}
+			max = ft_find_max(a);
+			min = ft_find_min(a);
+			if (b[1] > max) {
+				if (a[a[0]] == max)
+					ft_pa_pb(a, b, 'a', all_in_a);
+
+				else {
+					while (a[a[0]] != max) {
+						if (ft_find_index_elem(a, max) >= a[0] / 2 + a[0] % 2)
+							ft_rra_rrb(a, 'a');
+						else
+							ft_ra_rb(a, 'a');
+					}
+					ft_pa_pb(a, b, 'a', all_in_a);
+				}
+				ft_ra_rb(a, 'a');
+			}
+			else if (b[1] < min) {
+				if (a[1] == min)
+					ft_pa_pb(a, b, 'a', all_in_a);
+				else {
+					while (a[1] != min) {
+						if (ft_find_index_elem(a, min) > a[0] / 2 + a[0] % 2)
+							ft_rra_rrb(a, 'a');
+						else
+							ft_ra_rb(a, 'a');
+					}
+					ft_pa_pb(a, b, 'a', all_in_a);
+				}
+			}
+			else {
+				while (!(b[1] > a[a[0]] && b[1] < a[1]))
+					ft_ra_rb(a, 'a');
+				ft_pa_pb(a, b, 'a', all_in_a);
+			}
+		}
 }
 
 void	*ft_memcpy_int(void *dst, const void *src, size_t n)
@@ -195,18 +202,16 @@ void	*ft_memcpy_int(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-int		ft_many_begin(int *a, int *b, int *c, int index)
+int		ft_many_begin(int *a, int *b, int index_c, int group)
 {
 	int i;
-	int group;
 
 	i = 0;
-	group = (b[0] < 300) ? 15 : 40;
 	while (i < group)
 	{
-		if (b[1] <= c[index])
+		if (b[1] <= index_c)
 		{
-			ft_pa_pb(a, b, 'a', c[0]);
+			ft_5num2(a,b,a[0]+b[0]);
 			i++;
 		}
 		else
@@ -233,25 +238,26 @@ int		ft_many_numbers(int *a, int *b)
 	c = ft_memcpy_int(c, b, b[0] + 1);
 	ft_bubble_sort(c);
 	index = 0;
+
 	while (submassiv > 0)
 	{
-		i = 1;
 		if (submassiv >= group)
 			index += group;
-		else
+		else {
 			index += submassiv;
-		ft_many_begin(a, b, c, index);
-		int c = b[0];
-		b[0] = 0;
-		int d = a[0];
-		a[0] =(submassiv >= group) ? group : submassiv;
-		ft_5num(a, b , all_in_a);
-		k = a[0];
-		b[0] = c;
-		a[0] = d;
-		while (i++ <= k)
-			ft_ra_rb(a, 'a');
+			group = submassiv;
+		}
+		ft_many_begin(a, b, c[index],group );
+		//while (i++ <= k)
+			//ft_ra_rb(a, 'a');
 		submassiv -= group;
+	}
+	while(ft_check_sort(a))
+	{
+		if(ft_find_index_elem(a, ft_find_min(a)) > a[0] / 2 + a[0]%2)
+			ft_rra_rrb(a, 'a');
+		else
+			ft_ra_rb(a, 'a');
 	}
 	free(c);
 	return(0);
