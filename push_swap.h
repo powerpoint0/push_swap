@@ -27,5 +27,6 @@ void	ft_5num(int *a, int *b, int all_in_a);
 int		ft_many_numbers(int *a, int *b);
 void ft_5num_(int *a, int *b,int all_in_a);
 void ft_5num2(int *a, int *b,int all_in_a);
+void ft_5num_reverse_in_b(int *a, int *b,int all_in_a);
 
 #endif

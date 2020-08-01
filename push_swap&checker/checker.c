@@ -112,14 +112,14 @@ char**	ft_alg(int argc, int *a, int *b)
 	i = 0;
 	instr = ft_read_comands(a, b);
 		//int i = 0;
-//	if( instr) {
-//		while (instr[i]) {
-//			printf("%s\n", instr[i]);
-//			i++;
-//		}
-//	}
-//	i = 0;
-//	printf("\n");
+	if( instr) {
+		while (instr[i]) {
+			printf("%s", instr[i]);
+			i++;
+		}
+	}
+	i = 0;
+	printf("\n");
 	if (instr)
 	{
 		while (instr[i])
@@ -129,11 +129,11 @@ char**	ft_alg(int argc, int *a, int *b)
 		}
 	}
 	i = 0;
-//		while ((i <= a[0] || i <= b[0]))
-//	{
-//		printf("%d    %d\n", a[i], b[i]);
-//		i++;
-//	}
+		while ((i <= a[0] || i <= b[0]))
+	{
+		printf("%d    %d\n", a[i], b[i]);
+		i++;
+	}
 
 	if (b[0]!= 0 || ft_check_sort(a))
 		write(1, "KO\n", 3);
