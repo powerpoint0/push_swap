@@ -112,14 +112,15 @@ char**	ft_alg(int argc, int *a, int *b)
 	i = 0;
 	instr = ft_read_comands(a, b);
 		//int i = 0;
-	if( instr) {
-		while (instr[i]) {
-			printf("%s", instr[i]);
-			i++;
-		}
-	}
+//	if( instr) {
+//		while (instr[i]) {
+//			printf("%s", instr[i]);
+//			i++;
+//		}
+//	}
+//
+//	printf("\n");
 	i = 0;
-	printf("\n");
 	if (instr)
 	{
 		while (instr[i])
@@ -165,7 +166,7 @@ int main(int argc, char **argv)
 
 	instr = ft_alg(argc, a, b);
 
-//	int i = 0;
+	i = 0;
 //	if( instr) {
 //		while (instr[i]) {
 //			printf("%s", instr[i]);

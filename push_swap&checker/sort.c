@@ -202,54 +202,54 @@ void	*ft_memcpy_int(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-void ft_5num_reverse_in_b(int *a, int *b,int all_in_a)
+void ft_5num_reverse_in_b(int *b, int *a, int all_in_a)
 {
 
 	int max;
 	int min;
 
-	if (a[0] == 0)
-		ft_pa_pb(a, b, 'a', a[0]+b[0] );
+	if (b[0] == 0)
+		ft_pa_pb(b, a, 'b', b[0] + a[0] );
 	else {
-//			if (a[0] == 3)
+//			if (ccc[0] == 3)
 //			{
-//				ft_3num(a, 'a');
+//				ft_3num(ccc, 'ccc');
 //				return;
 //			}
-		max = ft_find_max(a);
-		min = ft_find_min(a);
-		if (b[1] < min) {
-			if (a[a[0]] == min)
-				ft_pa_pb(a, b, 'a', all_in_a);
+		max = ft_find_max(b);
+		min = ft_find_min(b);
+		if (a[1] < min) {
+			if (b[b[0]] == min)
+				ft_pa_pb(b, a, 'b', all_in_a);
 
 			else {
-				while (a[a[0]] != min) {
-					if (ft_find_index_elem(a, min) >= a[0] / 2 + a[0] % 2)
-						ft_rra_rrb(a, 'a');
+				while (b[b[0]] != min) {
+					if (ft_find_index_elem(b, min) >= b[0] / 2 + b[0] % 2)
+						ft_rra_rrb(b, 'b');
 					else
-						ft_ra_rb(a, 'a');
+						ft_ra_rb(b, 'b');
 				}
-				ft_pa_pb(a, b, 'a', all_in_a);
+				ft_pa_pb(b, a, 'b', all_in_a);
 			}
-			ft_ra_rb(a, 'a');
+			ft_ra_rb(b, 'b');
 		}
-		else if (b[1] > max) {
-			if (a[1] == max)
-				ft_pa_pb(a, b, 'a', all_in_a);
+		else if (a[1] > max) {
+			if (b[1] == max)
+				ft_pa_pb(b, a, 'b', all_in_a);
 			else {
-				while (a[1] != max) {
-					if (ft_find_index_elem(a, max) > a[0] / 2 + a[0] % 2)
-						ft_rra_rrb(a, 'a');
+				while (b[1] != max) {
+					if (ft_find_index_elem(b, max) > b[0] / 2 + b[0] % 2)
+						ft_rra_rrb(b, 'b');
 					else
-						ft_ra_rb(a, 'a');
+						ft_ra_rb(b, 'b');
 				}
-				ft_pa_pb(a, b, 'a', all_in_a);
+				ft_pa_pb(b, a, 'b', all_in_a);
 			}
 		}
 		else {
-			while (!(b[1] < a[a[0]] && b[1] > a[1]))
-				ft_ra_rb(a, 'a');
-			ft_pa_pb(a, b, 'a', all_in_a);
+			while (!(a[1] < b[b[0]] && a[1] > b[1]))
+				ft_ra_rb(b, 'b');
+			ft_pa_pb(b, a, 'b', all_in_a);
 		}
 	}
 }
@@ -264,6 +264,7 @@ int		ft_many_begin(int *a, int *b, int index_c, int group)
 
 	index_prev_in_b = 0;
 	index_prev = a[a[0]];
+
 	while (i < group)
 	{
 		if (a[1] <= index_c)
@@ -278,15 +279,20 @@ int		ft_many_begin(int *a, int *b, int index_c, int group)
 	}
 	if (!index_prev_in_b)
 	{
-		while (a[a[0]] != index_prev)
+		while (a[a[0]] != index_prev){
 			ft_ra_rb(a, 'a');
+		}
 	}
-	while (b[1] != ft_find_max(b))
+	while (b[1] != ft_find_max(b)){
 		ft_ra_rb(b, 'b');
-	while (b[0])
+	}
+	while (b[0]){
 		ft_pa_pb(a, b, 'a',a[0]+ b[0]);
-	while(a[a[0]] != index_c)
+	}
+	while(a[a[0]] != index_c){
 		ft_ra_rb(a, 'a');
+	}
+
 //	i = 0;
 //	while ((i <= a[0] || i <= b[0]))
 //	{
@@ -305,12 +311,21 @@ int		ft_many_numbers(int *a, int *b)
 	int index;
 	int group;
 
+
+//	static num;
+//	num++;
+
+
+
+
 	all_in_a = a[0];
-	//group = (all_in_a < 300) ? 15 : 40;
-	group = 5;
+	group = (all_in_a < 300) ? 15 : 45;
+	//group = 5;
 	submassiv = a[0];
-	c = ft_memalloc(a[0]+ 1);
-	c = ft_memcpy_int(c, a, a[0] + 1);
+	c = ft_memalloc(sizeof(int) * (a[0] + 1));
+	c = ft_memcpy_int(c, a, a[0] +1);
+	//ft_memcpy(c, a, sizeof(int) * (a[0] + 1));
+
 	ft_bubble_sort(c);
 	index = 0;
 
@@ -323,18 +338,15 @@ int		ft_many_numbers(int *a, int *b)
 			group = submassiv;
 		}
 		ft_many_begin(a, b, c[index],group );
-
 		submassiv -= group;
-
 	}
-
-	while(ft_check_sort(a))
-	{
-		if(ft_find_index_elem(a, ft_find_min(a)) > a[0] / 2 + a[0]%2)
-			ft_rra_rrb(a, 'a');
-		else
-			ft_ra_rb(a, 'a');
-	}
+//	while(ft_check_sort(a))
+//	{
+//		if(ft_find_index_elem(a, ft_find_min(a)) > a[0] / 2 + a[0]%2)
+//			ft_rra_rrb(a, 'a');
+//		else
+//			ft_ra_rb(a, 'a');
+//	}
 	free(c);
 	return(0);
 }
