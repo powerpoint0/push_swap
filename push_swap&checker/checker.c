@@ -111,16 +111,6 @@ char**	ft_alg(int argc, int *a, int *b)
 
 	i = 0;
 	instr = ft_read_comands(a, b);
-		//int i = 0;
-//	if( instr) {
-//		while (instr[i]) {
-//			printf("%s", instr[i]);
-//			i++;
-//		}
-//	}
-//
-//	printf("\n");
-	i = 0;
 	if (instr)
 	{
 		while (instr[i])
@@ -128,12 +118,6 @@ char**	ft_alg(int argc, int *a, int *b)
 			ft_do_comands(instr, instr[i], a, b);
 			i++;
 		}
-	}
-	i = 0;
-		while ((i <= a[0] || i <= b[0]))
-	{
-		printf("%d    %d\n", a[i], b[i]);
-		i++;
 	}
 
 	if (b[0]!= 0 || ft_check_sort(a))
@@ -148,7 +132,7 @@ int main(int argc, char **argv)
 	int *a;
 	int *b;
 	char **instr;
-	int i = 0;
+
 	a = NULL;
 	a = ft_check_error_and_write_numbers(argc, argv, a);
 	if (!(b = (int*)malloc(sizeof(*b) * (a[0] + 1))))
@@ -158,21 +142,17 @@ int main(int argc, char **argv)
 		exit(-1);
 	}
 	b[0] = 0;
-//		while ((i <= a[0] || i <= b[0]))
-//	{
-//		printf("%d    %d\n", a[i], b[i]);
-//		i++;
-//	}
-
 	instr = ft_alg(argc, a, b);
 
-	i = 0;
+	ft_free_all(instr, a, b);
+	return(0);
+}
+
+
+//	int i = 0;
 //	if( instr) {
 //		while (instr[i]) {
 //			printf("%s", instr[i]);
 //			i++;
 //		}
 //	}
-	ft_free_all(instr, a, b);
-	return(0);
-}
