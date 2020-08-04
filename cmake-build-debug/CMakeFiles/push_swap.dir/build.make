@@ -928,18 +928,44 @@ CMakeFiles/push_swap.dir/push_swap&checker/push_swap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/push_swap&checker/push_swap.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/push_swap.c" -o "CMakeFiles/push_swap.dir/push_swap&checker/push_swap.c.s"
 
-CMakeFiles/push_swap.dir/push_swap&checker/sort.c.o: CMakeFiles/push_swap.dir/flags.make
-CMakeFiles/push_swap.dir/push_swap&checker/sort.c.o: ../push_swap&checker/sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/push_swap.dir/push_swap&checker/sort.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o "CMakeFiles/push_swap.dir/push_swap&checker/sort.c.o"   -c "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort.c"
+CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o: ../push_swap&checker/sort_many.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o "CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o"   -c "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_many.c"
 
-CMakeFiles/push_swap.dir/push_swap&checker/sort.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/push_swap&checker/sort.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort.c" > "CMakeFiles/push_swap.dir/push_swap&checker/sort.c.i"
+CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_many.c" > "CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.i"
 
-CMakeFiles/push_swap.dir/push_swap&checker/sort.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/push_swap&checker/sort.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort.c" -o "CMakeFiles/push_swap.dir/push_swap&checker/sort.c.s"
+CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_many.c" -o "CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.s"
+
+CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.o: ../push_swap&checker/sort_few.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o "CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.o"   -c "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_few.c"
+
+CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_few.c" > "CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.i"
+
+CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_few.c" -o "CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.s"
+
+CMakeFiles/push_swap.dir/push_swap&checker/utils.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/push_swap&checker/utils.c.o: ../push_swap&checker/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/push_swap.dir/push_swap&checker/utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o "CMakeFiles/push_swap.dir/push_swap&checker/utils.c.o"   -c "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/utils.c"
+
+CMakeFiles/push_swap.dir/push_swap&checker/utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/push_swap&checker/utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/utils.c" > "CMakeFiles/push_swap.dir/push_swap&checker/utils.c.i"
+
+CMakeFiles/push_swap.dir/push_swap&checker/utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/push_swap&checker/utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/utils.c" -o "CMakeFiles/push_swap.dir/push_swap&checker/utils.c.s"
 
 # Object files for target push_swap
 push_swap_OBJECTS = \
@@ -1010,7 +1036,9 @@ push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/push_swap&checker/ft_check_valid.c.o" \
 "CMakeFiles/push_swap.dir/push_swap&checker/ft_functions.c.o" \
 "CMakeFiles/push_swap.dir/push_swap&checker/push_swap.c.o" \
-"CMakeFiles/push_swap.dir/push_swap&checker/sort.c.o"
+"CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o" \
+"CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.o" \
+"CMakeFiles/push_swap.dir/push_swap&checker/utils.c.o"
 
 # External object files for target push_swap
 push_swap_EXTERNAL_OBJECTS =
@@ -1082,10 +1110,12 @@ push_swap: CMakeFiles/push_swap.dir/libft/get_next_line.c.o
 push_swap: CMakeFiles/push_swap.dir/push_swap&checker/ft_check_valid.c.o
 push_swap: CMakeFiles/push_swap.dir/push_swap&checker/ft_functions.c.o
 push_swap: CMakeFiles/push_swap.dir/push_swap&checker/push_swap.c.o
-push_swap: CMakeFiles/push_swap.dir/push_swap&checker/sort.c.o
+push_swap: CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o
+push_swap: CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.o
+push_swap: CMakeFiles/push_swap.dir/push_swap&checker/utils.c.o
 push_swap: CMakeFiles/push_swap.dir/build.make
 push_swap: CMakeFiles/push_swap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking C executable push_swap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Linking C executable push_swap"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -78,7 +78,7 @@ add_executable(push_swap
 		push_swap&checker/ft_check_valid.c
 		push_swap&checker/ft_functions.c
 		push_swap&checker/push_swap.c
-		push_swap.h push_swap&checker/sort.c)
+		push_swap.h push_swap&checker/sort_many.c push_swap&checker/sort_few.c push_swap&checker/utils.c)
 
 add_executable(checker
 		libft/includes/get_next_line.h

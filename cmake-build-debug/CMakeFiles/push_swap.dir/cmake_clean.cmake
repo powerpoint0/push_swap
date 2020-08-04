@@ -66,7 +66,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/push_swap&checker/ft_check_valid.c.o"
   "CMakeFiles/push_swap.dir/push_swap&checker/ft_functions.c.o"
   "CMakeFiles/push_swap.dir/push_swap&checker/push_swap.c.o"
-  "CMakeFiles/push_swap.dir/push_swap&checker/sort.c.o"
+  "CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.o"
+  "CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o"
+  "CMakeFiles/push_swap.dir/push_swap&checker/utils.c.o"
   "push_swap"
   "push_swap.pdb"
 )

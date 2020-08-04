@@ -2170,32 +2170,86 @@ push_swap&checker/push_swap.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/push_swap.c.s"
 .PHONY : push_swap&checker/push_swap.c.s
 
-push_swap&checker/sort.o: push_swap&checker/sort.c.o
+push_swap&checker/sort_few.o: push_swap&checker/sort_few.c.o
 
-.PHONY : push_swap&checker/sort.o
+.PHONY : push_swap&checker/sort_few.o
 
 # target to build an object file
-push_swap&checker/sort.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort.c.o"
-.PHONY : push_swap&checker/sort.c.o
+push_swap&checker/sort_few.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.o"
+.PHONY : push_swap&checker/sort_few.c.o
 
-push_swap&checker/sort.i: push_swap&checker/sort.c.i
+push_swap&checker/sort_few.i: push_swap&checker/sort_few.c.i
 
-.PHONY : push_swap&checker/sort.i
+.PHONY : push_swap&checker/sort_few.i
 
 # target to preprocess a source file
-push_swap&checker/sort.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort.c.i"
-.PHONY : push_swap&checker/sort.c.i
+push_swap&checker/sort_few.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.i"
+.PHONY : push_swap&checker/sort_few.c.i
 
-push_swap&checker/sort.s: push_swap&checker/sort.c.s
+push_swap&checker/sort_few.s: push_swap&checker/sort_few.c.s
 
-.PHONY : push_swap&checker/sort.s
+.PHONY : push_swap&checker/sort_few.s
 
 # target to generate assembly for a file
-push_swap&checker/sort.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort.c.s"
-.PHONY : push_swap&checker/sort.c.s
+push_swap&checker/sort_few.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.s"
+.PHONY : push_swap&checker/sort_few.c.s
+
+push_swap&checker/sort_many.o: push_swap&checker/sort_many.c.o
+
+.PHONY : push_swap&checker/sort_many.o
+
+# target to build an object file
+push_swap&checker/sort_many.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o"
+.PHONY : push_swap&checker/sort_many.c.o
+
+push_swap&checker/sort_many.i: push_swap&checker/sort_many.c.i
+
+.PHONY : push_swap&checker/sort_many.i
+
+# target to preprocess a source file
+push_swap&checker/sort_many.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.i"
+.PHONY : push_swap&checker/sort_many.c.i
+
+push_swap&checker/sort_many.s: push_swap&checker/sort_many.c.s
+
+.PHONY : push_swap&checker/sort_many.s
+
+# target to generate assembly for a file
+push_swap&checker/sort_many.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.s"
+.PHONY : push_swap&checker/sort_many.c.s
+
+push_swap&checker/utils.o: push_swap&checker/utils.c.o
+
+.PHONY : push_swap&checker/utils.o
+
+# target to build an object file
+push_swap&checker/utils.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/utils.c.o"
+.PHONY : push_swap&checker/utils.c.o
+
+push_swap&checker/utils.i: push_swap&checker/utils.c.i
+
+.PHONY : push_swap&checker/utils.i
+
+# target to preprocess a source file
+push_swap&checker/utils.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/utils.c.i"
+.PHONY : push_swap&checker/utils.c.i
+
+push_swap&checker/utils.s: push_swap&checker/utils.c.s
+
+.PHONY : push_swap&checker/utils.s
+
+# target to generate assembly for a file
+push_swap&checker/utils.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/utils.c.s"
+.PHONY : push_swap&checker/utils.c.s
 
 # Help Target
 help:
@@ -2411,9 +2465,15 @@ help:
 	@echo "... push_swap&checker/push_swap.o"
 	@echo "... push_swap&checker/push_swap.i"
 	@echo "... push_swap&checker/push_swap.s"
-	@echo "... push_swap&checker/sort.o"
-	@echo "... push_swap&checker/sort.i"
-	@echo "... push_swap&checker/sort.s"
+	@echo "... push_swap&checker/sort_few.o"
+	@echo "... push_swap&checker/sort_few.i"
+	@echo "... push_swap&checker/sort_few.s"
+	@echo "... push_swap&checker/sort_many.o"
+	@echo "... push_swap&checker/sort_many.i"
+	@echo "... push_swap&checker/sort_many.s"
+	@echo "... push_swap&checker/utils.o"
+	@echo "... push_swap&checker/utils.i"
+	@echo "... push_swap&checker/utils.s"
 .PHONY : help
 
 

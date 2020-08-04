@@ -168,7 +168,6 @@ void* ft_check_error_and_write_numbers(int argc, char **argv, int *a)
 	if (argc <= 1)
 		exit(-1);
 	kolvo_numbers = ft_is_all_number(argc, argv);
-	//printf("%d\n", kolvo_numbers);
 	if (!(a = (int*)malloc(sizeof(*a) * (kolvo_numbers + 1))))
 		exit(-1);
 	ft_write_numbers_one_number(argv, a, kolvo_numbers);

@@ -28,8 +28,12 @@ int		ft_many_numbers(int *a, int *b);
 void	ft_few_numbers(int *a, int *b, int all_in_a);
 void	ft_5num2(int *a, int *b,int all_in_a);
 void	ft_5num_reverse_in_b(int *b, int *a, int all_in_a);
-
+int 	ft_check_sort(int *a);
 int		ft_many_begin(int *a, int *b, int index_c, int group);
 int		ft_check(int *a,int *b );
-void ft_3num_reverse(int *a, char letter);
+int 	ft_find_max(int *a);
+int		ft_find_min(int *a);
+int		ft_find_index_elem(int *a, int number);
+int		ft_bubble_sort(int *a);
+
 #endif

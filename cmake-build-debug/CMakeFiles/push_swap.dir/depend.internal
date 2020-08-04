@@ -195,8 +195,18 @@ CMakeFiles/push_swap.dir/push_swap&checker/push_swap.c.o
  ../libft/libft.h
  /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/push_swap.c
  /Users/cjoaquin/CLionProjects/p_s/push_swap.h
-CMakeFiles/push_swap.dir/push_swap&checker/sort.c.o
+CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.o
  ../libft/includes/get_next_line.h
  ../libft/libft.h
- /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort.c
+ /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_few.c
+ /Users/cjoaquin/CLionProjects/p_s/push_swap.h
+CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o
+ ../libft/includes/get_next_line.h
+ ../libft/libft.h
+ /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_many.c
+ /Users/cjoaquin/CLionProjects/p_s/push_swap.h
+CMakeFiles/push_swap.dir/push_swap&checker/utils.c.o
+ ../libft/includes/get_next_line.h
+ ../libft/libft.h
+ /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/utils.c
  /Users/cjoaquin/CLionProjects/p_s/push_swap.h
