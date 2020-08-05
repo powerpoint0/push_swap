@@ -29,15 +29,15 @@ void ft_3num(int *a, char letter)
 		ft_ra_rb(a, letter);
 }
 
-void ft_few_numbers(int *a, int *b, int all_in_a)
+void ft_few_numbers(int *a, int *b)
 {
 	while (a[0] > 3)
-		ft_pa_pb(b, a , 'b', all_in_a);
+		ft_pa_pb(b, a , 'b');
 	if(ft_check_sort(a))
 		ft_3num(a, 'a');
 	while(b[0])
 	{
-		ft_5num2(a, b, a[0]+ b[0]);
+		ft_sort_not_reverse_in_a(a, b);
 	}
 	while(ft_check_sort(a))
 	{

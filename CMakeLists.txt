@@ -76,9 +76,9 @@ add_executable(push_swap
 		libft/get_next_line.c
 		libft/libft.h
 		push_swap&checker/ft_check_valid.c
-		push_swap&checker/ft_functions.c
+		push_swap&checker/functions.c
 		push_swap&checker/push_swap.c
-		push_swap.h push_swap&checker/sort_many.c push_swap&checker/sort_few.c push_swap&checker/utils.c)
+		push_swap.h push_swap&checker/sort_many.c push_swap&checker/sort_few.c push_swap&checker/utils.c push_swap&checker/sort_one_reverse_in_b.c push_swap&checker/functions_rotate.c push_swap&checker/sort_many_in_group_util.c push_swap&checker/sort_one_not_reverse_in_a.c)
 
 add_executable(checker
 		libft/includes/get_next_line.h
@@ -150,5 +150,5 @@ add_executable(checker
 		libft/libft.h
 		push_swap&checker/checker.c
 		push_swap&checker/ft_check_valid.c
-		push_swap&checker/ft_functions.c
-		push_swap.h)
+		push_swap&checker/functions.c
+		push_swap.h push_swap&checker/functions_rotate.c)

@@ -82,3 +82,24 @@ int ft_bubble_sort(int *a)
 		i++;
 	}
 }
+
+int ft_check(int *a, int *b)
+{
+	int i = 1;
+	printf("% 5d     % 5d\n", a[0], b[0]);
+	while ((i <= a[0] || i <= b[0]) && i <= 100)
+	{
+		if(i <= a[0])
+			printf("% 5d", a[i]);
+		else
+			printf("     ");
+		printf("     ");
+		if(i <= b[0])
+			printf("% 5d", b[i]);
+		else
+			printf("     ");
+		printf("\n");
+		i++;
+	}
+	return (0);
+}

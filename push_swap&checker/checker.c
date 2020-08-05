@@ -1,61 +1,14 @@
-//
-// Created by Claudine Joaquin on 7/10/20.
-//
 
-//tomorrow: (it's easy) + think about using functions in alg_sort
-//проверка валидности и запись чисел по функциям из пуш_свап
-//чтение иснтрукций по одной
-//выполнение инструкций
-//проверка сортированности а и пустоты б
-//вывод ок/ко            ++++++
-//
-////////////
-// след шаг- подправление здесь неточностей,доработать чтение
-//вынести в отдельный проект для тестов
-//функции в сортировку пузырьком хоть как-то
-// мэйк
-//править совместную работу
+#include "../push_swap.h"
 
-///////
-//net seg, no ne chitaet, red == 0.
-//ne chitaet arg = "1 2 3"- dolzhno?to est args podayutsya v vide odnoi stroki?
-//vozvrashat lokalnye peremennye nelzya, a ukazateli  mozhno?
-//plan: dodelat checker , pristupit k sortirovke s komandami
-
-#include "push_swap.h"
-
-void ft_free_all(char **instr, int *a, int *b)
+void ft_do_comands(char *instr, int *a, int *b)
 {
-	int i;
-
-	i = 0;
-	if(a)
-		free(a);
-	if(b)
-		free(b);
-	if (instr)
-	{
-		while (instr[i])
-		{
-			free(instr[i]);
-			i++;
-		}
-		free(instr);
-	}
-	exit(0);
-}
-
-void ft_do_comands(char **instr_main, char *instr,int *a, int *b)
-{
-	int all;
-
-	all = a[0] + b[0];
 	if( !ft_strcmp(instr, "sa") || !ft_strcmp(instr, "sb"))
 		!ft_strcmp(instr, "sa") ? ft_sa_sb(a, 'a') : ft_sa_sb(b, 'b');
 	else if( !ft_strcmp(instr, "ss"))
 		ft_ss(a, b);
 	else if( !ft_strcmp(instr, "pa") || !ft_strcmp(instr, "pb"))
-		!ft_strcmp(instr, "pa") ? ft_pa_pb(a, b, 'a', all) : ft_pa_pb(b, a, 'b', all);
+		!ft_strcmp(instr, "pa") ? ft_pa_pb(a, b, 'a') : ft_pa_pb(b, a, 'b');
 	else if( !ft_strcmp(instr, "ra") || !ft_strcmp(instr, "rb"))
 		!ft_strcmp(instr, "ra") ? ft_ra_rb(a, 'a') : ft_ra_rb(b, 'b');
 	else if( !ft_strcmp(instr, "rr"))
@@ -66,7 +19,7 @@ void ft_do_comands(char **instr_main, char *instr,int *a, int *b)
 		ft_rrr(a, b);
 }
 
-char** ft_read_comands(int *a, int *b)
+char** ft_read_comands()
 {
 	int red;
 	char *str;
@@ -89,8 +42,7 @@ char** ft_read_comands(int *a, int *b)
 	return (instr);
 }
 
-
-int ft_check_sort(int *a)               //chisla sortirovany
+int ft_check_sort(int *a)
 {
 	int i;
 
@@ -104,22 +56,21 @@ int ft_check_sort(int *a)               //chisla sortirovany
 	return (-1);
 }
 
-char**	ft_alg(int argc, int *a, int *b)
+char**	ft_alg(int *a, int *b)
 {
 	int i;
 	char **instr;
 
 	i = 0;
-	instr = ft_read_comands(a, b);
+	instr = ft_read_comands();
 	if (instr)
 	{
 		while (instr[i])
 		{
-			ft_do_comands(instr, instr[i], a, b);
+			ft_do_comands(instr[i], a, b);
 			i++;
 		}
 	}
-
 	if (b[0]!= 0 || ft_check_sort(a))
 		write(1, "KO\n", 3);
 	else
@@ -142,8 +93,7 @@ int main(int argc, char **argv)
 		exit(-1);
 	}
 	b[0] = 0;
-	instr = ft_alg(argc, a, b);
-
+	instr = ft_alg(a, b);
 	ft_free_all(instr, a, b);
 	return(0);
 }

@@ -185,10 +185,15 @@ CMakeFiles/push_swap.dir/push_swap&checker/ft_check_valid.c.o: ../libft/libft.h
 CMakeFiles/push_swap.dir/push_swap&checker/ft_check_valid.c.o: ../push_swap&checker/ft_check_valid.c
 CMakeFiles/push_swap.dir/push_swap&checker/ft_check_valid.c.o: ../push_swap.h
 
-CMakeFiles/push_swap.dir/push_swap&checker/ft_functions.c.o: ../libft/includes/get_next_line.h
-CMakeFiles/push_swap.dir/push_swap&checker/ft_functions.c.o: ../libft/libft.h
-CMakeFiles/push_swap.dir/push_swap&checker/ft_functions.c.o: ../push_swap&checker/ft_functions.c
-CMakeFiles/push_swap.dir/push_swap&checker/ft_functions.c.o: ../push_swap.h
+CMakeFiles/push_swap.dir/push_swap&checker/functions.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/push_swap.dir/push_swap&checker/functions.c.o: ../libft/libft.h
+CMakeFiles/push_swap.dir/push_swap&checker/functions.c.o: ../push_swap&checker/functions.c
+CMakeFiles/push_swap.dir/push_swap&checker/functions.c.o: ../push_swap.h
+
+CMakeFiles/push_swap.dir/push_swap&checker/functions_rotate.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/push_swap.dir/push_swap&checker/functions_rotate.c.o: ../libft/libft.h
+CMakeFiles/push_swap.dir/push_swap&checker/functions_rotate.c.o: ../push_swap&checker/functions_rotate.c
+CMakeFiles/push_swap.dir/push_swap&checker/functions_rotate.c.o: ../push_swap.h
 
 CMakeFiles/push_swap.dir/push_swap&checker/push_swap.c.o: ../libft/includes/get_next_line.h
 CMakeFiles/push_swap.dir/push_swap&checker/push_swap.c.o: ../libft/libft.h
@@ -204,6 +209,21 @@ CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o: ../libft/includes/get_
 CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o: ../libft/libft.h
 CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o: ../push_swap&checker/sort_many.c
 CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o: ../push_swap.h
+
+CMakeFiles/push_swap.dir/push_swap&checker/sort_many_in_group_util.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/push_swap.dir/push_swap&checker/sort_many_in_group_util.c.o: ../libft/libft.h
+CMakeFiles/push_swap.dir/push_swap&checker/sort_many_in_group_util.c.o: ../push_swap&checker/sort_many_in_group_util.c
+CMakeFiles/push_swap.dir/push_swap&checker/sort_many_in_group_util.c.o: ../push_swap.h
+
+CMakeFiles/push_swap.dir/push_swap&checker/sort_one_not_reverse_in_a.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/push_swap.dir/push_swap&checker/sort_one_not_reverse_in_a.c.o: ../libft/libft.h
+CMakeFiles/push_swap.dir/push_swap&checker/sort_one_not_reverse_in_a.c.o: ../push_swap&checker/sort_one_not_reverse_in_a.c
+CMakeFiles/push_swap.dir/push_swap&checker/sort_one_not_reverse_in_a.c.o: ../push_swap.h
+
+CMakeFiles/push_swap.dir/push_swap&checker/sort_one_reverse_in_b.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/push_swap.dir/push_swap&checker/sort_one_reverse_in_b.c.o: ../libft/libft.h
+CMakeFiles/push_swap.dir/push_swap&checker/sort_one_reverse_in_b.c.o: ../push_swap&checker/sort_one_reverse_in_b.c
+CMakeFiles/push_swap.dir/push_swap&checker/sort_one_reverse_in_b.c.o: ../push_swap.h
 
 CMakeFiles/push_swap.dir/push_swap&checker/utils.c.o: ../libft/includes/get_next_line.h
 CMakeFiles/push_swap.dir/push_swap&checker/utils.c.o: ../libft/libft.h

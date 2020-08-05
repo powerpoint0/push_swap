@@ -69,10 +69,14 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/cjoaquin/CLionProjects/p_s/libft/ft_toupper.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/libft/ft_toupper.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/libft/get_next_line.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/libft/get_next_line.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/ft_check_valid.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap&checker/ft_check_valid.c.o"
-  "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/ft_functions.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap&checker/ft_functions.c.o"
+  "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/functions.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap&checker/functions.c.o"
+  "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/functions_rotate.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap&checker/functions_rotate.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/push_swap.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap&checker/push_swap.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_few.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap&checker/sort_few.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_many.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.o"
+  "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_many_in_group_util.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap&checker/sort_many_in_group_util.c.o"
+  "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_one_not_reverse_in_a.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap&checker/sort_one_not_reverse_in_a.c.o"
+  "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/sort_one_reverse_in_b.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap&checker/sort_one_reverse_in_b.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/utils.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap&checker/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

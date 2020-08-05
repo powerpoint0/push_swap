@@ -405,7 +405,11 @@
 			<Option target="checker"/>
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap&amp;checker/ft_functions.c">
+		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap&amp;checker/functions.c">
+			<Option target="checker"/>
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap&amp;checker/functions_rotate.c">
 			<Option target="checker"/>
 			<Option target="push_swap"/>
 		</Unit>
@@ -416,6 +420,15 @@
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap&amp;checker/sort_many.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap&amp;checker/sort_many_in_group_util.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap&amp;checker/sort_one_not_reverse_in_a.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap&amp;checker/sort_one_reverse_in_b.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap&amp;checker/utils.c">

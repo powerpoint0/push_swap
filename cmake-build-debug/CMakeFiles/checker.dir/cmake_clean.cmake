@@ -65,7 +65,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/checker.dir/libft/get_next_line.c.o"
   "CMakeFiles/checker.dir/push_swap&checker/checker.c.o"
   "CMakeFiles/checker.dir/push_swap&checker/ft_check_valid.c.o"
-  "CMakeFiles/checker.dir/push_swap&checker/ft_functions.c.o"
+  "CMakeFiles/checker.dir/push_swap&checker/functions.c.o"
+  "CMakeFiles/checker.dir/push_swap&checker/functions_rotate.c.o"
   "checker"
   "checker.pdb"
 )

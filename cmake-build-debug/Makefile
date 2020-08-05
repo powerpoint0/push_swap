@@ -2113,35 +2113,65 @@ push_swap&checker/ft_check_valid.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/ft_check_valid.c.s"
 .PHONY : push_swap&checker/ft_check_valid.c.s
 
-push_swap&checker/ft_functions.o: push_swap&checker/ft_functions.c.o
+push_swap&checker/functions.o: push_swap&checker/functions.c.o
 
-.PHONY : push_swap&checker/ft_functions.o
+.PHONY : push_swap&checker/functions.o
 
 # target to build an object file
-push_swap&checker/ft_functions.c.o:
-	$(MAKE) -f CMakeFiles/checker.dir/build.make "CMakeFiles/checker.dir/push_swap&checker/ft_functions.c.o"
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/ft_functions.c.o"
-.PHONY : push_swap&checker/ft_functions.c.o
+push_swap&checker/functions.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make "CMakeFiles/checker.dir/push_swap&checker/functions.c.o"
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/functions.c.o"
+.PHONY : push_swap&checker/functions.c.o
 
-push_swap&checker/ft_functions.i: push_swap&checker/ft_functions.c.i
+push_swap&checker/functions.i: push_swap&checker/functions.c.i
 
-.PHONY : push_swap&checker/ft_functions.i
+.PHONY : push_swap&checker/functions.i
 
 # target to preprocess a source file
-push_swap&checker/ft_functions.c.i:
-	$(MAKE) -f CMakeFiles/checker.dir/build.make "CMakeFiles/checker.dir/push_swap&checker/ft_functions.c.i"
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/ft_functions.c.i"
-.PHONY : push_swap&checker/ft_functions.c.i
+push_swap&checker/functions.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make "CMakeFiles/checker.dir/push_swap&checker/functions.c.i"
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/functions.c.i"
+.PHONY : push_swap&checker/functions.c.i
 
-push_swap&checker/ft_functions.s: push_swap&checker/ft_functions.c.s
+push_swap&checker/functions.s: push_swap&checker/functions.c.s
 
-.PHONY : push_swap&checker/ft_functions.s
+.PHONY : push_swap&checker/functions.s
 
 # target to generate assembly for a file
-push_swap&checker/ft_functions.c.s:
-	$(MAKE) -f CMakeFiles/checker.dir/build.make "CMakeFiles/checker.dir/push_swap&checker/ft_functions.c.s"
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/ft_functions.c.s"
-.PHONY : push_swap&checker/ft_functions.c.s
+push_swap&checker/functions.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make "CMakeFiles/checker.dir/push_swap&checker/functions.c.s"
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/functions.c.s"
+.PHONY : push_swap&checker/functions.c.s
+
+push_swap&checker/functions_rotate.o: push_swap&checker/functions_rotate.c.o
+
+.PHONY : push_swap&checker/functions_rotate.o
+
+# target to build an object file
+push_swap&checker/functions_rotate.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make "CMakeFiles/checker.dir/push_swap&checker/functions_rotate.c.o"
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/functions_rotate.c.o"
+.PHONY : push_swap&checker/functions_rotate.c.o
+
+push_swap&checker/functions_rotate.i: push_swap&checker/functions_rotate.c.i
+
+.PHONY : push_swap&checker/functions_rotate.i
+
+# target to preprocess a source file
+push_swap&checker/functions_rotate.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make "CMakeFiles/checker.dir/push_swap&checker/functions_rotate.c.i"
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/functions_rotate.c.i"
+.PHONY : push_swap&checker/functions_rotate.c.i
+
+push_swap&checker/functions_rotate.s: push_swap&checker/functions_rotate.c.s
+
+.PHONY : push_swap&checker/functions_rotate.s
+
+# target to generate assembly for a file
+push_swap&checker/functions_rotate.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make "CMakeFiles/checker.dir/push_swap&checker/functions_rotate.c.s"
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/functions_rotate.c.s"
+.PHONY : push_swap&checker/functions_rotate.c.s
 
 push_swap&checker/push_swap.o: push_swap&checker/push_swap.c.o
 
@@ -2223,6 +2253,87 @@ push_swap&checker/sort_many.s: push_swap&checker/sort_many.c.s
 push_swap&checker/sort_many.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_many.c.s"
 .PHONY : push_swap&checker/sort_many.c.s
+
+push_swap&checker/sort_many_in_group_util.o: push_swap&checker/sort_many_in_group_util.c.o
+
+.PHONY : push_swap&checker/sort_many_in_group_util.o
+
+# target to build an object file
+push_swap&checker/sort_many_in_group_util.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_many_in_group_util.c.o"
+.PHONY : push_swap&checker/sort_many_in_group_util.c.o
+
+push_swap&checker/sort_many_in_group_util.i: push_swap&checker/sort_many_in_group_util.c.i
+
+.PHONY : push_swap&checker/sort_many_in_group_util.i
+
+# target to preprocess a source file
+push_swap&checker/sort_many_in_group_util.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_many_in_group_util.c.i"
+.PHONY : push_swap&checker/sort_many_in_group_util.c.i
+
+push_swap&checker/sort_many_in_group_util.s: push_swap&checker/sort_many_in_group_util.c.s
+
+.PHONY : push_swap&checker/sort_many_in_group_util.s
+
+# target to generate assembly for a file
+push_swap&checker/sort_many_in_group_util.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_many_in_group_util.c.s"
+.PHONY : push_swap&checker/sort_many_in_group_util.c.s
+
+push_swap&checker/sort_one_not_reverse_in_a.o: push_swap&checker/sort_one_not_reverse_in_a.c.o
+
+.PHONY : push_swap&checker/sort_one_not_reverse_in_a.o
+
+# target to build an object file
+push_swap&checker/sort_one_not_reverse_in_a.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_one_not_reverse_in_a.c.o"
+.PHONY : push_swap&checker/sort_one_not_reverse_in_a.c.o
+
+push_swap&checker/sort_one_not_reverse_in_a.i: push_swap&checker/sort_one_not_reverse_in_a.c.i
+
+.PHONY : push_swap&checker/sort_one_not_reverse_in_a.i
+
+# target to preprocess a source file
+push_swap&checker/sort_one_not_reverse_in_a.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_one_not_reverse_in_a.c.i"
+.PHONY : push_swap&checker/sort_one_not_reverse_in_a.c.i
+
+push_swap&checker/sort_one_not_reverse_in_a.s: push_swap&checker/sort_one_not_reverse_in_a.c.s
+
+.PHONY : push_swap&checker/sort_one_not_reverse_in_a.s
+
+# target to generate assembly for a file
+push_swap&checker/sort_one_not_reverse_in_a.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_one_not_reverse_in_a.c.s"
+.PHONY : push_swap&checker/sort_one_not_reverse_in_a.c.s
+
+push_swap&checker/sort_one_reverse_in_b.o: push_swap&checker/sort_one_reverse_in_b.c.o
+
+.PHONY : push_swap&checker/sort_one_reverse_in_b.o
+
+# target to build an object file
+push_swap&checker/sort_one_reverse_in_b.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_one_reverse_in_b.c.o"
+.PHONY : push_swap&checker/sort_one_reverse_in_b.c.o
+
+push_swap&checker/sort_one_reverse_in_b.i: push_swap&checker/sort_one_reverse_in_b.c.i
+
+.PHONY : push_swap&checker/sort_one_reverse_in_b.i
+
+# target to preprocess a source file
+push_swap&checker/sort_one_reverse_in_b.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_one_reverse_in_b.c.i"
+.PHONY : push_swap&checker/sort_one_reverse_in_b.c.i
+
+push_swap&checker/sort_one_reverse_in_b.s: push_swap&checker/sort_one_reverse_in_b.c.s
+
+.PHONY : push_swap&checker/sort_one_reverse_in_b.s
+
+# target to generate assembly for a file
+push_swap&checker/sort_one_reverse_in_b.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make "CMakeFiles/push_swap.dir/push_swap&checker/sort_one_reverse_in_b.c.s"
+.PHONY : push_swap&checker/sort_one_reverse_in_b.c.s
 
 push_swap&checker/utils.o: push_swap&checker/utils.c.o
 
@@ -2459,9 +2570,12 @@ help:
 	@echo "... push_swap&checker/ft_check_valid.o"
 	@echo "... push_swap&checker/ft_check_valid.i"
 	@echo "... push_swap&checker/ft_check_valid.s"
-	@echo "... push_swap&checker/ft_functions.o"
-	@echo "... push_swap&checker/ft_functions.i"
-	@echo "... push_swap&checker/ft_functions.s"
+	@echo "... push_swap&checker/functions.o"
+	@echo "... push_swap&checker/functions.i"
+	@echo "... push_swap&checker/functions.s"
+	@echo "... push_swap&checker/functions_rotate.o"
+	@echo "... push_swap&checker/functions_rotate.i"
+	@echo "... push_swap&checker/functions_rotate.s"
 	@echo "... push_swap&checker/push_swap.o"
 	@echo "... push_swap&checker/push_swap.i"
 	@echo "... push_swap&checker/push_swap.s"
@@ -2471,6 +2585,15 @@ help:
 	@echo "... push_swap&checker/sort_many.o"
 	@echo "... push_swap&checker/sort_many.i"
 	@echo "... push_swap&checker/sort_many.s"
+	@echo "... push_swap&checker/sort_many_in_group_util.o"
+	@echo "... push_swap&checker/sort_many_in_group_util.i"
+	@echo "... push_swap&checker/sort_many_in_group_util.s"
+	@echo "... push_swap&checker/sort_one_not_reverse_in_a.o"
+	@echo "... push_swap&checker/sort_one_not_reverse_in_a.i"
+	@echo "... push_swap&checker/sort_one_not_reverse_in_a.s"
+	@echo "... push_swap&checker/sort_one_reverse_in_b.o"
+	@echo "... push_swap&checker/sort_one_reverse_in_b.i"
+	@echo "... push_swap&checker/sort_one_reverse_in_b.s"
 	@echo "... push_swap&checker/utils.o"
 	@echo "... push_swap&checker/utils.i"
 	@echo "... push_swap&checker/utils.s"

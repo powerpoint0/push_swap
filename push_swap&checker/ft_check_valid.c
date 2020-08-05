@@ -26,7 +26,7 @@ int	ft_is_all_numbers2(char **argv, int j)
 	return(k);
 }
 
-int ft_is_all_number(int argc, char **argv)
+int ft_is_all_numbers(int argc, char **argv)
 {
 	int j;
 	int k;
@@ -68,6 +68,23 @@ int		ft_atoi_with_check(const char *str)
 	}
 	return ((int)resalt);
 }
+void ft_if_one_number_or_0(int *a)
+{
+	int kolvo_num;
+
+	kolvo_num = a[0];
+	if(kolvo_num == 1)// odno chislo
+	{
+		free(a);
+		exit(0);
+	}
+	if (kolvo_num == 0)
+	{
+		write(2, "Error\n", 6);
+		free(a);
+		exit(-1);
+	}
+}
 
 int ft_write_numbers_one_number(char **argv, int *a, int kolvo_num)
 {
@@ -99,19 +116,9 @@ int ft_write_numbers_one_number(char **argv, int *a, int kolvo_num)
 			}
 		}
 	}
-	if(kolvo_num == 1)// odno chislo
-	{
-		free(a);
-		exit(0);
-	}
-	if (kolvo_num == 0)
-	{
-		write(2, "Error\n", 6);
-		free(a);
-		exit(-1);
-	}
 	a[0] = kolvo_num;
-	return 0;
+	ft_if_one_number_or_0(a);
+	return(0);
 }
 
 void ft_check_repeat_numbers(int *a)        //chisla povtoryautsya?
@@ -139,7 +146,7 @@ void ft_check_repeat_numbers(int *a)        //chisla povtoryautsya?
 	}
 }
 
-void* ft_check_sort_and_b_ps(int *a, int *b)  //+++++          //chisla sortirovany
+void* ft_check_sort_and_b_ps(int *a, int *b)
 {
 	int i;
 
@@ -167,11 +174,10 @@ void* ft_check_error_and_write_numbers(int argc, char **argv, int *a)
 
 	if (argc <= 1)
 		exit(-1);
-	kolvo_numbers = ft_is_all_number(argc, argv);
+	kolvo_numbers = ft_is_all_numbers(argc, argv);
 	if (!(a = (int*)malloc(sizeof(*a) * (kolvo_numbers + 1))))
 		exit(-1);
 	ft_write_numbers_one_number(argv, a, kolvo_numbers);
-
 	ft_check_repeat_numbers(a);
 	return(a);
 }

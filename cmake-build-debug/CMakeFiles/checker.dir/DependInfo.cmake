@@ -70,7 +70,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/cjoaquin/CLionProjects/p_s/libft/get_next_line.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/libft/get_next_line.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/checker.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/push_swap&checker/checker.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/ft_check_valid.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/push_swap&checker/ft_check_valid.c.o"
-  "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/ft_functions.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/push_swap&checker/ft_functions.c.o"
+  "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/functions.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/push_swap&checker/functions.c.o"
+  "/Users/cjoaquin/CLionProjects/p_s/push_swap&checker/functions_rotate.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/push_swap&checker/functions_rotate.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

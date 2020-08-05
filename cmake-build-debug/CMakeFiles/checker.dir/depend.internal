@@ -183,15 +183,20 @@ CMakeFiles/checker.dir/libft/get_next_line.c.o
 CMakeFiles/checker.dir/push_swap&checker/checker.c.o
  ../libft/includes/get_next_line.h
  ../libft/libft.h
- ../push_swap.h
  /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/checker.c
+ /Users/cjoaquin/CLionProjects/p_s/push_swap.h
 CMakeFiles/checker.dir/push_swap&checker/ft_check_valid.c.o
  ../libft/includes/get_next_line.h
  ../libft/libft.h
  /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/ft_check_valid.c
  /Users/cjoaquin/CLionProjects/p_s/push_swap.h
-CMakeFiles/checker.dir/push_swap&checker/ft_functions.c.o
+CMakeFiles/checker.dir/push_swap&checker/functions.c.o
  ../libft/includes/get_next_line.h
  ../libft/libft.h
- /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/ft_functions.c
+ /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/functions.c
+ /Users/cjoaquin/CLionProjects/p_s/push_swap.h
+CMakeFiles/checker.dir/push_swap&checker/functions_rotate.c.o
+ ../libft/includes/get_next_line.h
+ ../libft/libft.h
+ /Users/cjoaquin/CLionProjects/p_s/push_swap&checker/functions_rotate.c
  /Users/cjoaquin/CLionProjects/p_s/push_swap.h
