@@ -403,6 +403,7 @@
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap_n_checker/check_only_numbers.c">
+			<Option target="checker"/>
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap_n_checker/check_valid_n_write.c">

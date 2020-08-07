@@ -180,23 +180,28 @@ CMakeFiles/checker.dir/libft/get_next_line.c.o: ../libft/includes/get_next_line.
 CMakeFiles/checker.dir/libft/get_next_line.c.o: ../libft/libft.h
 CMakeFiles/checker.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
 
-CMakeFiles/checker.dir/push_swap&checker/checker.c.o: ../libft/includes/get_next_line.h
-CMakeFiles/checker.dir/push_swap&checker/checker.c.o: ../libft/libft.h
-CMakeFiles/checker.dir/push_swap&checker/checker.c.o: ../push_swap&checker/checker.c
-CMakeFiles/checker.dir/push_swap&checker/checker.c.o: ../push_swap.h
+CMakeFiles/checker.dir/push_swap_n_checker/check_only_numbers.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/checker.dir/push_swap_n_checker/check_only_numbers.c.o: ../libft/libft.h
+CMakeFiles/checker.dir/push_swap_n_checker/check_only_numbers.c.o: ../push_swap.h
+CMakeFiles/checker.dir/push_swap_n_checker/check_only_numbers.c.o: ../push_swap_n_checker/check_only_numbers.c
 
-CMakeFiles/checker.dir/push_swap&checker/ft_check_valid.c.o: ../libft/includes/get_next_line.h
-CMakeFiles/checker.dir/push_swap&checker/ft_check_valid.c.o: ../libft/libft.h
-CMakeFiles/checker.dir/push_swap&checker/ft_check_valid.c.o: ../push_swap&checker/ft_check_valid.c
-CMakeFiles/checker.dir/push_swap&checker/ft_check_valid.c.o: ../push_swap.h
+CMakeFiles/checker.dir/push_swap_n_checker/check_valid_n_write.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/checker.dir/push_swap_n_checker/check_valid_n_write.c.o: ../libft/libft.h
+CMakeFiles/checker.dir/push_swap_n_checker/check_valid_n_write.c.o: ../push_swap.h
+CMakeFiles/checker.dir/push_swap_n_checker/check_valid_n_write.c.o: ../push_swap_n_checker/check_valid_n_write.c
 
-CMakeFiles/checker.dir/push_swap&checker/functions.c.o: ../libft/includes/get_next_line.h
-CMakeFiles/checker.dir/push_swap&checker/functions.c.o: ../libft/libft.h
-CMakeFiles/checker.dir/push_swap&checker/functions.c.o: ../push_swap&checker/functions.c
-CMakeFiles/checker.dir/push_swap&checker/functions.c.o: ../push_swap.h
+CMakeFiles/checker.dir/push_swap_n_checker/checker.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/checker.dir/push_swap_n_checker/checker.c.o: ../libft/libft.h
+CMakeFiles/checker.dir/push_swap_n_checker/checker.c.o: ../push_swap.h
+CMakeFiles/checker.dir/push_swap_n_checker/checker.c.o: ../push_swap_n_checker/checker.c
 
-CMakeFiles/checker.dir/push_swap&checker/functions_rotate.c.o: ../libft/includes/get_next_line.h
-CMakeFiles/checker.dir/push_swap&checker/functions_rotate.c.o: ../libft/libft.h
-CMakeFiles/checker.dir/push_swap&checker/functions_rotate.c.o: ../push_swap&checker/functions_rotate.c
-CMakeFiles/checker.dir/push_swap&checker/functions_rotate.c.o: ../push_swap.h
+CMakeFiles/checker.dir/push_swap_n_checker/functions.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/checker.dir/push_swap_n_checker/functions.c.o: ../libft/libft.h
+CMakeFiles/checker.dir/push_swap_n_checker/functions.c.o: ../push_swap.h
+CMakeFiles/checker.dir/push_swap_n_checker/functions.c.o: ../push_swap_n_checker/functions.c
+
+CMakeFiles/checker.dir/push_swap_n_checker/functions_rotate.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/checker.dir/push_swap_n_checker/functions_rotate.c.o: ../libft/libft.h
+CMakeFiles/checker.dir/push_swap_n_checker/functions_rotate.c.o: ../push_swap.h
+CMakeFiles/checker.dir/push_swap_n_checker/functions_rotate.c.o: ../push_swap_n_checker/functions_rotate.c
 

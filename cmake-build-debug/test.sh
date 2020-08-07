@@ -24,7 +24,7 @@ MAXNUMBER=0;
 MINNUMBER=10000;
 MEDIUM=0;
 TESTNUM=1;
-NUMBERS=5;
+NUMBERS=3;
 
     while [ ${YESNO} -lt ${NUMBERS} ]; do
         TEMP=$((RANDOM%${RANGENUM}+0))" ";

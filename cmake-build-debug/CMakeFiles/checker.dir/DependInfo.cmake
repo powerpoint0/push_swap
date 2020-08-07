@@ -68,6 +68,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/cjoaquin/CLionProjects/p_s/libft/ft_tolower.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/libft/ft_tolower.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/libft/ft_toupper.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/libft/ft_toupper.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/libft/get_next_line.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/libft/get_next_line.c.o"
+  "/Users/cjoaquin/CLionProjects/p_s/push_swap_n_checker/check_only_numbers.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/push_swap_n_checker/check_only_numbers.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/push_swap_n_checker/check_valid_n_write.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/push_swap_n_checker/check_valid_n_write.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/push_swap_n_checker/checker.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/push_swap_n_checker/checker.c.o"
   "/Users/cjoaquin/CLionProjects/p_s/push_swap_n_checker/functions.c" "/Users/cjoaquin/CLionProjects/p_s/cmake-build-debug/CMakeFiles/checker.dir/push_swap_n_checker/functions.c.o"

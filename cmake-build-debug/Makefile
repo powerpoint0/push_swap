@@ -2062,6 +2062,7 @@ push_swap_n_checker/check_only_numbers.o: push_swap_n_checker/check_only_numbers
 
 # target to build an object file
 push_swap_n_checker/check_only_numbers.c.o:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/push_swap_n_checker/check_only_numbers.c.o
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap_n_checker/check_only_numbers.c.o
 .PHONY : push_swap_n_checker/check_only_numbers.c.o
 
@@ -2071,6 +2072,7 @@ push_swap_n_checker/check_only_numbers.i: push_swap_n_checker/check_only_numbers
 
 # target to preprocess a source file
 push_swap_n_checker/check_only_numbers.c.i:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/push_swap_n_checker/check_only_numbers.c.i
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap_n_checker/check_only_numbers.c.i
 .PHONY : push_swap_n_checker/check_only_numbers.c.i
 
@@ -2080,6 +2082,7 @@ push_swap_n_checker/check_only_numbers.s: push_swap_n_checker/check_only_numbers
 
 # target to generate assembly for a file
 push_swap_n_checker/check_only_numbers.c.s:
+	$(MAKE) -f CMakeFiles/checker.dir/build.make CMakeFiles/checker.dir/push_swap_n_checker/check_only_numbers.c.s
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap_n_checker/check_only_numbers.c.s
 .PHONY : push_swap_n_checker/check_only_numbers.c.s
 

@@ -63,6 +63,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/checker.dir/libft/ft_tolower.c.o"
   "CMakeFiles/checker.dir/libft/ft_toupper.c.o"
   "CMakeFiles/checker.dir/libft/get_next_line.c.o"
+  "CMakeFiles/checker.dir/push_swap_n_checker/check_only_numbers.c.o"
   "CMakeFiles/checker.dir/push_swap_n_checker/check_valid_n_write.c.o"
   "CMakeFiles/checker.dir/push_swap_n_checker/checker.c.o"
   "CMakeFiles/checker.dir/push_swap_n_checker/functions.c.o"

@@ -98,10 +98,9 @@ int main(int argc, char **argv)
 
 	a = NULL;
 	a = ft_check_error_and_write_numbers(argc, argv, a);
-	if (!(b = (int*)malloc(sizeof(*b) * (a[0] + 1))))
+	if (!(b = (int*)malloc(sizeof(*b) * (a[0] + 2))))
 	{
 		write(2,"Error\n", 6);
-		free(a);
 		exit(-1);
 	}
 	b[0] = 0;

@@ -116,7 +116,7 @@ void* ft_check_error_and_write_numbers(int argc, char **argv, int *a)
 	if (argc <= 1)
 		exit(-1);
 	kolvo_numbers = ft_is_all_numbers_n_less_ll(argc, argv);
-	if (!(a = (int*)malloc(sizeof(*a) * (kolvo_numbers + 1))))
+	if (!(a = (int*)malloc(sizeof(*a) * (kolvo_numbers + 2))))
 		exit(-1);
 	ft_write_numbers_in_a(argv, a, kolvo_numbers);
 	a[0] = kolvo_numbers;

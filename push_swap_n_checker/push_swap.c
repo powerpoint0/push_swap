@@ -24,7 +24,7 @@ void* ft_check_sort_and_b_ps(int *a, int *b)
 		free(a);
 		exit(0);
 	}
-	if (!(b = (int*)malloc(sizeof(*b) * (a[0] + 1))))
+	if (!(b = (int*)malloc(sizeof(*b) * (a[0] + 2))))
 	{
 		write(2,"Error\n", 6);
 		free(a);
