@@ -86,7 +86,7 @@ add_executable(push_swap
 		push_swap_n_checker/functions_rotate.c
 		push_swap_n_checker/sort_many_in_group_util.c
 		push_swap_n_checker/sort_one_not_reverse_in_a.c
-		push_swap_n_checker/check_only_numbers.c)
+		push_swap_n_checker/check_only_numbers.c push_swap.h)
 
 add_executable(checker
 		libft/includes/get_next_line.h
@@ -161,4 +161,4 @@ add_executable(checker
 		push_swap_n_checker/functions.c
 		push_swap.h
 		push_swap_n_checker/functions_rotate.c
-		push_swap_n_checker/check_only_numbers.c)
+		push_swap_n_checker/check_only_numbers.c push_swap.h)

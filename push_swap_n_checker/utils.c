@@ -72,7 +72,7 @@ int ft_find_index_elem(int *a, int number)
 	return(-1);
 }
 
-int ft_bubble_sort(int *a)
+void ft_bubble_sort(int *a)
 {
 	int i;
 	int c;
@@ -80,8 +80,10 @@ int ft_bubble_sort(int *a)
 
 	n = 1;
 	i = 1;
-	while (i < a[0]) {
-		while (i + n <= a[0]) {
+	while (i < a[0])
+	{
+		while (i + n <= a[0])
+		{
 			if (a[i] > a[i + n])
 			{
 				c = a[i];

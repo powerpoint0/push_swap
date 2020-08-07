@@ -44,10 +44,10 @@ int 	ft_check_sort(int *a);
 int 	ft_find_max(int *a);
 int		ft_find_min(int *a);
 int		ft_find_index_elem(int *a, int number);
-int		ft_bubble_sort(int *a);
+void	ft_bubble_sort(int *a);
 void	ft_reverse_rrr(int *a, int *b, int index_prev_in_b, int index_prev);
 void	ft_reverse_rab_rrab(int *a, int *b, int index_prev_in_b,
-		int index_prev);
+							int index_prev);
 void	ft_pa_and_rotate_to_the_end(int *a, int *b, int index_c);
 int		ft_check(int *a, int *b);
 void	ft_free_all(char **instr, int *a, int *b);
