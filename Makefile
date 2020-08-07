@@ -47,8 +47,6 @@ $(NAME_CH): $(OBJS_CH)
 		cd libft && make
 		ar rc $(NAME) $?
 
-
-
 VPATH := $(source_dirs)
 
 clean:
@@ -60,6 +58,5 @@ fclean: clean
 	rm -f $(NAME_PS) $(NAME_CH)
 
 re: fclean all
-
 
 include $(wildcard *.d)
