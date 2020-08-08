@@ -29,6 +29,11 @@ void ft_do_comands(char *instr, int *a, int *b)
 		!ft_strcmp(instr, "rra") ? ft_rra_rrb(a, 'a') : ft_rra_rrb(b, 'b');
 	else if( !ft_strcmp(instr, "rrr"))
 		ft_rrr(a, b);
+	else
+	{
+		write(2,"Error\n", 6);
+		exit(-1);
+	}
 }
 
 char** ft_read_comands()

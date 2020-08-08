@@ -394,10 +394,6 @@
 			<Option target="checker"/>
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/libft/libft.h">
-			<Option target="checker"/>
-			<Option target="push_swap"/>
-		</Unit>
 		<Unit filename="/Users/cjoaquin/CLionProjects/p_s/push_swap.h">
 			<Option target="checker"/>
 			<Option target="push_swap"/>

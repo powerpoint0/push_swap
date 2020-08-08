@@ -16,7 +16,6 @@ int ft_is_num_n_less_int(char *argv, int i)
 {
 	int len_num;
 
-
 	len_num = 0;
 	if (argv[i] == '-' || argv[i] == '+')
 		i++;
@@ -30,7 +29,7 @@ int ft_is_num_n_less_int(char *argv, int i)
 		else
 			return (-1);
 	}
-	if (len_num > 16)
+	if (len_num > 16 || len_num == 0)
 		return (-1);
 	return(i);
 }
