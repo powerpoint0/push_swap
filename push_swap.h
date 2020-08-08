@@ -10,9 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# ifndef PUSH_SWAP_PUSH_SWAP_H
-# define PUSH_SWAP_PUSH_SWAP_H
-
+# ifndef P_S_PUSH_SWAP_H
+# define P_S_PUSH_SWAP_H
 # include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
@@ -26,13 +25,13 @@ int		ft_atoi_with_check(const char *str);
 void	ft_write_numbers_in_a(char **argv, int *a, int kolvo_num);
 void	ft_check_repeat_numbers(int *a);
 int		ft_check_sort(int *a);
-int 	ft_sa_sb(int *a, char letter);
-int		ft_ss(int *a, int *b);
+int		ft_sa_sb(int *a, char letter);
+int		ft_ss(int *a, int *b, char letter);
 int		ft_pa_pb(int *a, int *b, char letter);
 int		ft_ra_rb(int *a, char letter);
-int		ft_rr(int *a, int *b);
+int		ft_rr(int *a, int *b, char letter);
 int		ft_rra_rrb(int *a, char letter);
-int		ft_rrr(int *a, int *b);
+int		ft_rrr(int *a, int *b, char letter);
 void	ft_2num(int *a, char letter);
 void	ft_3num(int *a, char letter);
 void	ft_few_numbers(int *a, int *b);
@@ -40,8 +39,8 @@ void	ft_sort_not_reverse_in_a(int *a, int *b);
 int		ft_many_numbers(int *a, int *b);
 void	ft_sort_in_group(int *a, int *b, int index_c, int group);
 void	sort_one_reverse_in_b(int *b, int *a);
-int 	ft_check_sort(int *a);
-int 	ft_find_max(int *a);
+int		ft_check_sort(int *a);
+int		ft_find_max(int *a);
 int		ft_find_min(int *a);
 int		ft_find_index_elem(int *a, int number);
 void	ft_bubble_sort(int *a);

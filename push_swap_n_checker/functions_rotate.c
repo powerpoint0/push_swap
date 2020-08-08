@@ -34,10 +34,12 @@ int ft_ra_rb(int *a, char letter)
 }
 
 
-int ft_rr(int *a,int *b)
+int ft_rr(int *a,int *b, char letter)
 {
 	ft_ra_rb(a, 'n');
 	ft_ra_rb(b, 'n');
+	if (letter == 'n')
+		return(0);
 	write(1, "rr\n", 3);
 	return(0);
 }
@@ -64,10 +66,12 @@ int ft_rra_rrb(int *a, char letter)
 	return(0);
 }
 
-int ft_rrr(int *a, int *b)
+int ft_rrr(int *a, int *b, char letter)
 {
 	ft_rra_rrb(a, 'n');
 	ft_rra_rrb(b, 'n');
+	if (letter == 'n')
+		return(0);
 	write(1, "rrr\n", 4);
 	return(0);
 }

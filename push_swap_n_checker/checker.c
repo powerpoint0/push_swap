@@ -16,19 +16,19 @@
 void ft_do_comands(char *instr, int *a, int *b)
 {
 	if( !ft_strcmp(instr, "sa") || !ft_strcmp(instr, "sb"))
-		!ft_strcmp(instr, "sa") ? ft_sa_sb(a, 'a') : ft_sa_sb(b, 'b');
+		!ft_strcmp(instr, "sa") ? ft_sa_sb(a, 'n') : ft_sa_sb(b, 'n');
 	else if( !ft_strcmp(instr, "ss"))
-		ft_ss(a, b);
+		ft_ss(a, b, 'n');
 	else if( !ft_strcmp(instr, "pa") || !ft_strcmp(instr, "pb"))
-		!ft_strcmp(instr, "pa") ? ft_pa_pb(a, b, 'a') : ft_pa_pb(b, a, 'b');
+		!ft_strcmp(instr, "pa") ? ft_pa_pb(a, b, 'n') : ft_pa_pb(b, a, 'n');
 	else if( !ft_strcmp(instr, "ra") || !ft_strcmp(instr, "rb"))
-		!ft_strcmp(instr, "ra") ? ft_ra_rb(a, 'a') : ft_ra_rb(b, 'b');
+		!ft_strcmp(instr, "ra") ? ft_ra_rb(a, 'n') : ft_ra_rb(b, 'n');
 	else if( !ft_strcmp(instr, "rr"))
-		ft_rr(a, b);
+		ft_rr(a, b, 'n');
 	else if( !ft_strcmp(instr, "rra") || !ft_strcmp(instr, "rrb"))
-		!ft_strcmp(instr, "rra") ? ft_rra_rrb(a, 'a') : ft_rra_rrb(b, 'b');
+		!ft_strcmp(instr, "rra") ? ft_rra_rrb(a, 'n') : ft_rra_rrb(b, 'n');
 	else if( !ft_strcmp(instr, "rrr"))
-		ft_rrr(a, b);
+		ft_rrr(a, b, 'n');
 	else
 	{
 		write(2,"Error\n", 6);

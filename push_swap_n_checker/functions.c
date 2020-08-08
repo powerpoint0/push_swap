@@ -27,10 +27,12 @@ int ft_sa_sb(int *a, char letter)
 	return(0);
 }
 
-int ft_ss(int *a, int *b)
+int ft_ss(int *a, int *b, char letter)
 {
 	ft_sa_sb(a, 'n');
 	ft_sa_sb(b, 'n');
+	if (letter == 'n')
+		return(0);
 	write(1, "ss\n", 3);
 	return(0);
 }

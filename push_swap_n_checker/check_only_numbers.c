@@ -12,7 +12,7 @@
 
 #include "../push_swap.h"
 
-int ft_is_num_n_less_int(char *argv, int i)
+int	ft_is_num_n_less_int(char *argv, int i)
 {
 	int len_num;
 
@@ -31,7 +31,7 @@ int ft_is_num_n_less_int(char *argv, int i)
 	}
 	if (len_num > 16 || len_num == 0)
 		return (-1);
-	return(i);
+	return (i);
 }
 
 int	ft_is_all_numbers2(char **argv, int j)
@@ -40,15 +40,14 @@ int	ft_is_all_numbers2(char **argv, int j)
 	int k;
 
 	k = 0;
-	i= 0;
-
-	while(argv[j][i] != '\0')
+	i = 0;
+	while (argv[j][i] != '\0')
 	{
-		while(argv[j][i] && argv[j][i]== ' ')
+		while (argv[j][i] && argv[j][i] == ' ')
 			i++;
 		if (argv[j][i])
 		{
-			if((i = ft_is_num_n_less_int(argv[j], i)) == -1)
+			if ((i = ft_is_num_n_less_int(argv[j], i)) == -1)
 			{
 				write(2, "Error\n", 6);
 				exit(-1);
@@ -56,22 +55,22 @@ int	ft_is_all_numbers2(char **argv, int j)
 			k++;
 		}
 	}
-	return(k);
+	return (k);
 }
 
-int ft_is_all_numbers_n_less_ll(int argc, char **argv)
+int	ft_is_all_numbers_n_less_ll(int argc, char **argv)
 {
 	int j;
 	int k;
 
 	k = 0;
 	j = 1;
-	while(j< argc)
+	while (j < argc)
 	{
 		if (argc == 2 && (argv[1][0] == '\0'))
 			exit(-1);
 		k += ft_is_all_numbers2(argv, j);
 		j++;
 	}
-	return(k);
+	return (k);
 }

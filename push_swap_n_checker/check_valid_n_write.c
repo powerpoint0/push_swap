@@ -29,7 +29,7 @@ int		ft_atoi_with_check(const char *str)
 		str++;
 	}
 	resalt *= sign;
-	if (resalt > INT32_MAX || resalt < INT32_MIN)				//some arguments are bigger than an integer,
+	if (resalt > INT32_MAX || resalt < INT32_MIN)
 	{
 		write(2, "Error\n", 6);
 		exit(-1);
@@ -37,12 +37,12 @@ int		ft_atoi_with_check(const char *str)
 	return ((int)resalt);
 }
 
-void ft_if_one_number_or_0(int *a)
+void	ft_if_one_number_or_0(int *a)
 {
 	int kolvo_num;
 
 	kolvo_num = a[0];
-	if(kolvo_num == 1)
+	if (kolvo_num == 1)
 	{
 		free(a);
 		exit(0);
@@ -55,25 +55,25 @@ void ft_if_one_number_or_0(int *a)
 	}
 }
 
-void ft_write_numbers_in_a(char **argv, int *a, int kolvo_num)
+void	ft_write_numbers_in_a(char **argv, int *a, int kolvo_num)
 {
-	int j;
-	int	i;
-	char *str;
-	int k;
+	int		j;
+	int		i;
+	char	*str;
+	int		k;
 
 	k = 0;
 	j = 1;
 	i = 0;
-	while(i < kolvo_num)   //zapisyvaem chisla v massiv int
+	while (i < kolvo_num)
 	{
-		while(argv[j][k] && argv[j][k]== ' ')
+		while (argv[j][k] && argv[j][k] == ' ')
 			k++;
 		if (argv[j][k])
 		{
 			str = &argv[j][k];
 			a[++i] = ft_atoi_with_check(str);
-			while (argv[j][k] && argv[j][k]!= ' ')
+			while (argv[j][k] && argv[j][k] != ' ')
 				k++;
 		}
 		else
@@ -84,13 +84,13 @@ void ft_write_numbers_in_a(char **argv, int *a, int kolvo_num)
 	}
 }
 
-void ft_check_repeat_numbers(int *a)
+void	ft_check_repeat_numbers(int *a)
 {
 	int	i;
 	int n;
 
 	i = 1;
-	n= 1;
+	n = 1;
 	while (i < a[0])
 	{
 		while (i + n <= a[0])
@@ -109,7 +109,7 @@ void ft_check_repeat_numbers(int *a)
 	}
 }
 
-void* ft_check_error_and_write_numbers(int argc, char **argv, int *a)
+void	*ft_check_error_and_write_numbers(int argc, char **argv, int *a)
 {
 	int kolvo_numbers;
 
@@ -122,5 +122,5 @@ void* ft_check_error_and_write_numbers(int argc, char **argv, int *a)
 	a[0] = kolvo_numbers;
 	ft_if_one_number_or_0(a);
 	ft_check_repeat_numbers(a);
-	return(a);
+	return (a);
 }

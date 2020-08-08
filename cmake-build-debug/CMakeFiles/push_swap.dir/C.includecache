@@ -17,10 +17,10 @@ stdlib.h
 -
 unistd.h
 -
-libft/libft.h
-../libft/includes/libft/libft.h
+libft.h
+../libft/includes/libft.h
 
-../libft/libft.h
+../libft/includes/libft.h
 string.h
 -
 stdlib.h
@@ -40,11 +40,7 @@ libft.h
 get_next_line.h
 /Users/cjoaquin/CLionProjects/p_s/get_next_line.h
 
-/Users/cjoaquin/CLionProjects/p_s/push_swap_n_checker/check_valid_n_write.c
-../push_swap.h
-/Users/cjoaquin/CLionProjects/p_s/push_swap.h
-
-/Users/cjoaquin/CLionProjects/p_s/push_swap_n_checker/push_swap.c
+/Users/cjoaquin/CLionProjects/p_s/push_swap_n_checker/sort_many_in_group_util.c
 ../push_swap.h
 /Users/cjoaquin/CLionProjects/p_s/push_swap.h
 

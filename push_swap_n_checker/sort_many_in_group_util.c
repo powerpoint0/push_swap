@@ -23,10 +23,10 @@ void ft_reverse_rrr(int *a, int *b,int index_prev_in_b,int index_prev)
 		{
 			if ((ft_find_index_elem(a, index_prev) >= a[0] / 2 + a[0] % 2)
 				&& (ft_find_index_elem(b, maxb) > b[0] / 2 + b[0] % 2))
-				ft_rrr(a, b);
+				ft_rrr(a, b, 'a');
 			else if ((ft_find_index_elem(a, index_prev) < a[0] / 2 + a[0] % 2)
 					 && (ft_find_index_elem(b, maxb) <= b[0] / 2 + b[0] % 2))
-				ft_rr(a, b);
+				ft_rr(a, b, 'a');
 			else
 				break;
 		}
