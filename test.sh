@@ -40,5 +40,5 @@ NUMBERS=5;
     echo ${A}
   # ./push_swap ${A} | ../visualizer ${A} # | wc -l #./checker ${A}
    #./push_swap ${A} | wc -l
- ./push_swap ${A}
-  #./push_swap ${A} |./checker ${A}
+ #./push_swap ${A}
+  ./push_swap ${A} |./checker ${A}

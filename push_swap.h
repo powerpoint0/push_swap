@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# ifndef P_S_PUSH_SWAP_H
+#ifndef P_S_PUSH_SWAP_H
 # define P_S_PUSH_SWAP_H
 # include <stdio.h>
 # include <unistd.h>

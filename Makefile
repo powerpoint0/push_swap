@@ -17,13 +17,15 @@ SRCS_PS = push_swap_n_checker/check_valid_n_write.c \
           		push_swap_n_checker/functions_rotate.c \
           		push_swap_n_checker/sort_many_in_group_util.c \
           		push_swap_n_checker/sort_one_not_reverse_in_a.c \
-          		push_swap_n_checker/check_only_numbers.c
+          		push_swap_n_checker/check_only_numbers.c \
+          		push_swap_n_checker/util2.c
 
 SRCS_CH = push_swap_n_checker/checker.c \
           		push_swap_n_checker/check_valid_n_write.c \
           		push_swap_n_checker/functions.c \
           		push_swap_n_checker/functions_rotate.c \
-          		push_swap_n_checker/check_only_numbers.c
+          		push_swap_n_checker/check_only_numbers.c \
+          		push_swap_n_checker/util2.c
 
 OBJS_PS = $(notdir $(patsubst %.c,%.o,$(SRCS_PS)))
 
